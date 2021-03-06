@@ -1,0 +1,8 @@
+
+.git/
+
+data/secret/
+
+ajax/secret/
+
+.DS_Store

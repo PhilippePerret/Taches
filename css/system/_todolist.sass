@@ -1,0 +1,30 @@
+div.todolist
+  top: 100px
+  left: 300px
+  width: 500px
+  min-height: 300px
+  max-height: 560px
+  overflow: auto
+  div.task-list
+    li
+      list-style: none
+      margin-top: 0.6em
+      span.todolist-mark
+        border-radius: 8px
+        padding: 0px 4px
+        margin: 0 4px
+        opacity: 0.5
+      span.todolist-priority
+        border: 1px solid red
+        color: red
+      span.todolist-tag
+        border: 1px solid green
+        background-color: blue
+        color: white
+        cursor: pointer
+  div.buttons
+    position: absolute
+    bottom: 0
+    width: 90%
+    text-align: right
+    padding-top: 1em

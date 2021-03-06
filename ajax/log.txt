@@ -1,0 +1,8 @@
+--- [2020-12-02 07:11:16 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/__WebApp_Scaffold__"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/__WebApp_Scaffold__/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/__WebApp_Scaffold__/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/__WebApp_Scaffold__/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/__WebApp_Scaffold__/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/__WebApp_Scaffold__/ajax/ajax/required/system/db.rb'

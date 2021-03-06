@@ -1,0 +1,138 @@
+//
+// Listing
+//
+div.listing
+  position: absolute
+  display: inline-block
+  border: 1px solid #999999
+  box-shadow: 7px 7px 7px 7px #e4e4e4
+  user-select: none
+  -webkit-user-select: none
+  background-color: white
+  color: black
+
+  div.listing-barre-centrale
+    height: 400px
+    margin: 0
+    padding: 0
+
+    ul
+      list-style: none
+      float: left
+      height: inherit
+      overflow: auto
+      margin: 0
+      padding: 0
+      user-select: none
+      -webkit-user-select: none
+
+  div.listing-barre-boutons
+    height: 28px
+
+//
+// LES ÉLÉMENTS DE LISTE
+//
+div.listing
+  ul
+    li
+      padding: 3px 8px
+      white-space:  nowrap
+
+      &:nth-child(odd)
+        background-color: #c7ffd4
+      &:nth-child(even)
+        background-color: #b1e9b9
+      &:hover
+        background-color: #DDDDFF
+
+
+      &.selected:not(.modified)
+        background-color: #1A67DB
+        color: white
+      &.modified
+        background-color: #EC0B0B
+        color: white
+
+//
+// LE FORMULAIRE D'AFFICHAGE
+//
+div.listing
+  div.listing-barre-centrale
+    form.listing-form
+      // Pour height, voir au-dessus
+      width: 420px
+      height: calc(400px - 28px - 4px)
+      overflow: auto
+      padding: 1em 0
+
+      span.row
+        margin-left: 1em
+        > div
+          display: inline-block
+      div.row
+        vertical-align: top
+        padding: 0 1em
+        margin-top: 0.6em
+
+        &.field-error
+          background-color: rgb(233, 177, 177)
+
+          label
+            color: white
+
+          div.error-message
+            font-size: 9pt
+            padding: 0 3em 0 0
+            color: rgb(214, 40, 40)
+
+        label
+          display: inline-block
+          font-size: 9.9pt
+          width: 80px
+          color: #777777
+          font-style: italic
+          vertical-align: top
+
+
+    input[type="text"], textarea
+      border: none
+      background-color: #EEEEEE
+      font-size: inherit
+      font-family: inherit
+      width: -webkit-fill-available
+
+    textarea
+      height: 80px
+      resize: none
+
+//
+//  BARRE DES BOUTONS
+//
+div.listing
+  div.listing-barre-boutons
+    background-color: #CCCCCC
+    border: 1px solid grey
+    padding: 0
+    > button
+      border-style: solid
+      border-color: grey
+      padding:  1px 11px 4px
+      margin: 0
+      font-size: 14pt
+      background-color: white
+      &:not(.fright)
+        border-width: 0 1px 0 0
+
+      &.fright
+        border-width: 0 0 0 1px
+
+
+div.listing
+  div.listing-barre-titre
+    height: 30px
+    // Pour height, voir au-dessus
+    background-color: black
+    color: white
+    font-size: 16pt
+    font-variant: small-caps
+    padding: 4px 1em
