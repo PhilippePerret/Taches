@@ -18,12 +18,29 @@ constructor(data) {
   this.id = data.id
   this.content = data.content
 }
+
+// Sauvegarde de la tache
+save(){
+  return Ajax.send('tache-save.rb', {tache_data: this.data})
+}
 /**
 * Affichage de la tâche
 ***/
 display(){
   this.constructor.container.appendChild(this.div)
   this.observe()
+}
+
+onEdit(){
+  message("Je dois éditer la tâche #" + this.id)
+}
+onDestroy(){
+  let confirmation = TEST_ON ? !!Test.confirmation : confirm('Êtes-vous certain de vouloir détruire la tâche “'+this.content+'”')
+  if(confirmation){
+    Ajax.send('tache-destroy.rb', {tache_id:this.id})
+    .then(this.div.remove.bind(this.div))
+  }
+
 }
 
 get div(){
@@ -43,7 +60,8 @@ build(){
 }
 
 observe(){
-
+  DGet(`#${this.divId}-btn-edit`).addEventListener('click', this.onEdit.bind(this))
+  DGet(`#${this.divId}-btn-supp`).addEventListener('click', this.onDestroy.bind(this))
 }
 
 }// class Tache

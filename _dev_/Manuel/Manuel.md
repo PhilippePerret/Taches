@@ -31,3 +31,9 @@ Il est simple et doit rester simple. Et ne définir que les fonctionnalités ci-
 * Choix du thème d'affichage parmi plusieurs (pour varier l'affichage)
 * Définition/modifiation d'un thème d'affichage
 * Consultation des archives, avec une période de temps donnée
+
+## Manuel développement
+
+### Enregistrement des données
+
+Vu le nombre peu important de données, on va enregistrer les données dans un fichier `YAML` pour les tâches courantes. Les tâches accomplies seront enregistrées dans un fichier texte tout ce qu'il y a de plus banal, sur une ligne.

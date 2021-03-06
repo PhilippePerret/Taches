@@ -11,16 +11,19 @@ class Test {
     this.pending_count = 0
   }
   static start(){
+    // TODO Il faut mettre le fichier taches.yaml servant aux tests
     this.init()
     loadJSModule('tests_tache.js','tests')
     .then(loadJSModule.bind(null,'tests_labels.js','tests'))
-    .then(()=>{
-      this.run()
-      this.report()
-    })
+    .then(() => this.runNext())
   }
-  static run(){
-    this.items.forEach(test => test.run.call(test))
+  static runNext(){
+    const nextTest = this.items.shift()
+    if ( nextTest ) {
+      nextTest.run.call(nextTest).then(this.runNext.bind(this))
+    } else {
+      this.report()
+    }
   }
   static report(){
     var style = (() => {
@@ -49,14 +52,28 @@ constructor(method_name, params){
   this.params = params || {}
 }
 run(){
-  try {
-    if (this.constructor[this.method_name].call(this)){
-      this.onSuccess()
-    } else {
+  return new Promise((ok,ko) => {
+    try {
+      var resultat = this.constructor[this.method_name].call(this)
+      // console.log("resultat = ", resultat, typeof(resultat))
+      if ( 'boolean' == typeof(resultat) ) {
+        this.evaluateResultat(resultat)
+        ok()
+      } else {
+        // Une promesse (peut-être le test pourrait être plus fin)
+        resultat.then(resultat => this.evaluateResultat(resultat)).then(ok)
+      }
+    } catch (e) {
+      this._failure_message = e
       this.onFailure()
     }
-  } catch (e) {
-    this._failure_message = e
+  })
+}
+
+evaluateResultat(resultat){
+  if (resultat){
+    this.onSuccess()
+  } else {
     this.onFailure()
   }
 }
