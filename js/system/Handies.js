@@ -132,12 +132,13 @@ function clip(what, msg){
 }
 
 /**
-* Pour charger un module du dossier 'js/module'
+* Pour charger un module du dossier 'js/module' (ou de n'importe quel dossier
+* si +folder+ est défini)
 ***/
-function loadJSModule(moduleName){
+function loadJSModule(moduleName, folder = 'module'){
   moduleName.endsWith('.js') || (moduleName += '.js')
   return new Promise((ok,ko)=>{
-    const script = DCreate('SCRIPT',{src:`js/module/${moduleName}`, type:"text/javascript"})
+    const script = DCreate('SCRIPT',{src:`js/${folder}/${moduleName}`, type:"text/javascript"})
     document.body.appendChild(script)
     script.addEventListener('load', ok)
   })
