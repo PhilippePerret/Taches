@@ -6,6 +6,48 @@ class Tache {
 *   CLASSE
 *
 *** --------------------------------------------------------------------- */
+
+/**
+* Méthode principale permettant de charger et d'afficher les tâches courantes
+***/
+static load(){
+  this.lastId = 0
+  return Ajax.send('taches-load.rb')
+  .then(this.dispatchTaches.bind(this))
+  .then(this.displayTaches.bind(this))
+  .then(this.observeUI.bind(this))
+}
+
+static newId(){
+  if ( undefined == this.lastId ) this.lastId = 0
+  return ++ this.lastId
+}
+
+// Crée les instances
+static dispatchTaches(ret){
+  ret.taches.forEach(dtache => this.addTacheWithData(dtache))
+}
+
+// Affiche toutes les tâches
+static displayTaches(){
+  for(var tid in this.items){
+    const tache = this.items[tid]
+    tache.display()
+  }
+}
+
+// Observer l'interface
+static observeUI(){
+  TacheForm.init()
+  message("Je suis prêt.")
+}
+
+static addTacheWithData(dtache){
+  if (undefined === this.items) this.items = {}
+  if ( this.lastId < dtache.id ) this.lastId = Number(dtache.id)
+  Object.assign(this.items, {[dtache.id]: new Tache(dtache)})
+}
+
 static get container(){return this._container || (this._container = DGet('#taches'))}
 /** ---------------------------------------------------------------------
 *

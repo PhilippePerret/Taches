@@ -1,8 +1,16 @@
 ---
 :taches:
-- content: Une tâche à Sat Mar 06 2021 17:17:41 GMT+0100 (CET)
-  id: 1
-  time: '2021-03-06T16:17:41.156Z'
-  duree: 24
-:create_at: 2021/03/06-17:17
-:updated_at: 2021/03/06-17:17
+- :id: 8
+  :content: Une troisième tâche
+  :labels: ''
+  :echeance: ''
+  :duree: ''
+  :priority: '5'
+- :id: 9
+  :content: Une quatrième encore
+  :labels: ''
+  :echeance: ''
+  :duree: ''
+  :priority: '5'
+:create_at: 2021/03/06-18:37
+:updated_at: 2021/03/06-18:37

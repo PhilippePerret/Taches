@@ -2702,3 +2702,1678 @@ Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/
 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
 Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:26:16 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:26:17 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:26:17 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:26:17 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:26:51 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:26:51 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:26:51 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:26:52 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:27:32 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:27:32 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:27:32 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:29:04 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:29:04 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:29:04 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:29:59 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:00 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:00 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:08 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:08 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:08 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:15 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:15 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:15 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:29 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:29 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:30:30 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:32:02 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:32:02 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:32:02 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:33:26 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:33:26 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:33:27 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:36:03 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:36:03 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:36:03 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:41:49 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:41:49 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:41:49 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:42:05 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:42:05 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:42:05 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:45:10 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:45:10 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:45:10 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:45:17 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:45:17 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:45:18 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:46:04 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:46:04 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:46:04 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:46:15 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:46:15 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:46:15 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:58:33 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:58:34 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:58:34 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:59:00 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:59:00 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:59:01 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:59:22 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:59:22 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 17:59:22 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:00:55 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:00:55 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:00:56 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:01:46 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:01:46 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:01:46 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:03:59 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:04:00 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:04:01 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:04:28 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:04:28 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:04:29 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:05:14 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:05:14 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:05:14 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:05:42 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:05:43 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:05:43 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:16:19 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:16:19 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:16:19 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:20:02 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:20:03 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:20:03 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:20:12 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:20:47 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:20:47 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:20:48 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+Nombre de fichiers .DS_Store détruits : 0
+--- [2021-03-06 18:29:02 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:29:03 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:29:03 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:29:12 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:32:03 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:32:04 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:32:04 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:32:12 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:33:32 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:34:15 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:34:37 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:36:20 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:37:40 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:37:40 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:37:40 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:37:47 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:40:22 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:40:23 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:40:23 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:41:20 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:41:21 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:41:21 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:44:23 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:44:23 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-06 18:44:24 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
