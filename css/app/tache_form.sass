@@ -5,9 +5,22 @@ form#tache-form
   padding: 1em
   width: 580px
   position: fixed
-  bottom: 0
   right: 0
   z-index: 1000
+  &.opened
+    bottom: 0
+    transition: .5s
+  &:not(.opened)
+    bottom: -262px
+    transition: .5s
+  div#handler
+    position: absolute
+    top: 0
+    left: 0
+    border-radius: 0.5em 0.5em 0 0
+    background-color: #CCC
+    height: 20px
+    width: 100%
   div.row
     margin-top: 7px
     & > label

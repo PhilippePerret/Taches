@@ -4,18 +4,37 @@ class TacheForm {
 static init(){
   this.observe()
 }
+
+// Méthode appelée pour éditer la tache +tache+
+static edit(tache){
+  console.log("éditer la tâche : ", tache)
+  this.open()
+  this.setValues(tache.data)
+  message("Vous pouvez éditer la tâche #"+tache.id+".")
+}
+
+static toggle(){
+  if ( this.obj.classList.contains('opened')){this.close()
+  } else { this.open() }
+}
+static open(){this.obj.classList.add('opened')}
+static close(){this.obj.classList.remove('opened')}
+
 static observe(){
   DGet('#form-btn-save-tache').addEventListener('click',this.onSaveTache.bind(this))
   DGet('#form-btn-init-tache').addEventListener('click',this.onInitForm.bind(this))
+  DGet('#handler', this.obj).addEventListener('click',this.toggle.bind(this))
 }
 
 static onSaveTache(ev){
-  message("Je dois sauver la tâche")
   const data = this.getValues()
   if (data){
     console.log("Enregistrement de la tâche :", data)
     Ajax.send('tache-save.rb', {tache_data: data})
-    .then(ret => message(ret.message))
+    .then(ret => {
+      message(ret.message)
+      this.close()
+    })
   }
   return stopEvent(ev)
 }

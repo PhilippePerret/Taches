@@ -59,6 +59,10 @@ constructor(data) {
 
   this.id = data.id
   this.content = data.content
+  this.priority = Number(data.priority)
+  this.echeance = data.echeance
+  this.duree    = data.duree
+  this.labels   = data.labels
 }
 
 // Sauvegarde de la tache
@@ -74,7 +78,7 @@ display(){
 }
 
 onEdit(){
-  message("Je dois éditer la tâche #" + this.id)
+  TacheForm.edit(this)
 }
 onDestroy(){
   let confirmation = TEST_ON ? !!Test.confirmation : confirm('Êtes-vous certain de vouloir détruire la tâche “'+this.content+'”')
