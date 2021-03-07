@@ -1,10 +1,11 @@
 'use strict'
 /** ---------------------------------------------------------------------
-  *   Test des Labels
-  *
+*
+*   Test des Labels
+*
 *** --------------------------------------------------------------------- */
 
-Test.new('on_peut_instancier_un_label_avec_des_data_correctes', () => {
+Test.new('On peut instancier un label avec des data correctes', () => {
   const label = new Label({name: "Nom du label"})
-  return typeof(label) == 'object'
+  return label.constructor.name == 'Label'
 })

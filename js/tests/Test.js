@@ -4,18 +4,19 @@
   *
 *** --------------------------------------------------------------------- */
 class Test {
-  static init(){
-    this.items = []; // tous les tests
+  static init(ret){
+    this.items = []; // pour mettre tous les tests (instances Test)
     this.success_count = 0
     this.failure_count = 0
     this.pending_count = 0
   }
   static start(){
-    // TODO Il faut mettre le fichier taches.yaml servant aux tests
-    this.init()
-    loadJSModule('tests_tache.js','tests')
+    Ajax.send('tests/before-all.rb')
+    .then(this.init.bind(this))
+    .then(loadJSModule.bind(window,'tests_tache.js','tests'))
     .then(loadJSModule.bind(null,'tests_labels.js','tests'))
-    .then(() => this.runNext())
+    .then(this.runNext.bind(this))
+    .catch(erreur.bind(null))
   }
   static runNext(){
     const nextTest = this.items.shift()
@@ -23,6 +24,7 @@ class Test {
       nextTest.run.call(nextTest).then(this.runNext.bind(this))
     } else {
       this.report()
+      return Ajax.send('tests/after-all.rb')
     }
   }
   static report(){
@@ -35,13 +37,14 @@ class Test {
     console.log('%cSuccess: '+this.success_count+ '   Failures: '+this.failure_count+'   Pendings: '+this.pending_count, style)
   }
 
-static add(test){
-  if ( 'string' === typeof(test) ) test = new Test(test)
+static add(test, human_name){
+  if ( 'string' === typeof(test) ) test = new Test(test, {success: human_name})
   this.items.push(test)
 }
-static new(method_name, method){
+static new(method_human_name, method){
+  const method_name = method_human_name.replace(/ /g,'_')
   this[method_name] = method;
-  this.add(method_name)
+  this.add(method_name, method_human_name)
 }
 /** ---------------------------------------------------------------------
   *   INSTANCE

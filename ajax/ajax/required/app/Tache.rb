@@ -24,7 +24,7 @@ class << self
 
   def save
     log("Data avant sauvegarde : #{data.inspect}")
-    taches = items.values.sort_by{|tache|tache.time}.collect{|tache|tache.data}
+    taches = items.values.sort_by{|tache|tache.echeance_time}.collect{|tache|tache.data}
     new_data = {
       # TODO Plus tard, on pourra mettre d'autres données
       taches: taches,
@@ -36,6 +36,7 @@ class << self
     File.open(data_path,'wb'){|f|f.write(YAML.dump(new_data))}
     return true
   rescue Exception => e
+    Ajax.error(e)
     @error = e.message
     return false
   end #/ save
@@ -61,7 +62,24 @@ class << self
   end #/ data
 
   def data_path
-    @data_path ||= File.expand_path(File.join('.','taches.yaml'))
+    @data_path ||= File.join(DATA_FOLDER,'taches.yaml')
+  end
+  def data_backup_path
+    @data_backup_path ||= File.join(DATA_FOLDER,'taches_backup.yaml')
+  end
+
+  def archives_path
+    @archives_path ||= File.join(DATA_FOLDER,'archives.txt')
+  end
+  def archives_backup_path
+    @archives_backup_path ||= File.join(DATA_FOLDER,'archives_backup.txt')
+  end
+
+  def config_path
+    @config_path ||= File.join(DATA_FOLDER,'config.yaml')
+  end
+  def config_backup_path
+    @config_backup_path ||= File.join(DATA_FOLDER,'config_backup.yaml')
   end
 
 end # /<< self
@@ -74,9 +92,19 @@ attr_accessor :data
 def initialize(data)
   @data = data
 end
-def id      ; data[:id]       end
-def content ; data[:content]  end
-def time    ; data[:time]     end
+def id        ; data[:id]       end
+def content   ; data[:content]  end
+def echeance  ; data[:echeance].nil_if_empty end
+
+def echeance_time
+  @echeance_time ||= begin
+    if echeance
+      Time.new(echeance)
+    else
+      0 # pour être toujours en premier
+    end
+  end
+end #/ echeance_time
 
 # Pour détruire la tâche
 def destroy

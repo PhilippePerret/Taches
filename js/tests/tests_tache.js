@@ -6,7 +6,7 @@ class TacheFactory {
     return new Promise((ok,ko)=>{
       data = data || {}
       data.content  || Object.assign(data, {content: `Une tâche à ${new Date()}`})
-      data.id       || Object.assign(data, {id: this.newId()})
+      data.id       || Object.assign(data, {id: Tache.newId()})
       data.time     || Object.assign(data, {time: new Date()})
       data.duree    || Object.assign(data, {duree: 24})
       const tache = new Tache(data)
@@ -17,36 +17,28 @@ class TacheFactory {
       })
     })
   }
-
-// *** Private methods ***
-static newId(){
-  if (undefined == this.lastId) this.lastId = 0
-  return ++ this.lastId
 }
 
-}
-
-Test.new('le_container_de_taches_existe', ()=>{
+Test.new('Le container de taches existe', ()=>{
   return !!DGet('div#taches')
 })
 
-Test.new('le_formulaire_de_tache_existe', ()=>{
+Test.new('Un formulaire de tache conforme existe', ()=>{
   return !!DGet('#tache-form')
 })
 
-Test.on_peut_instancier_une_tache = function(){
+Test.new('On peut instancier une tache', function(){
   var tache = new Tache({content:'Le texte de la tâche'})
-  return typeof(tache) == 'object'
-}
-Test.add('on_peut_instancier_une_tache')
+  return tache.constructor.name == 'Tache'
+})
 
-Test.on_peut_afficher_la_tache = function(){
+Test.new('On peut afficher la tache', function(){
   return TacheFactory.create()
-  .then(() => {
-    return !!DGet('div#tache-1')
+  .then(tache => {
+    // console.log("Tache créée dans 'On peut afficher la tache'", tache)
+    return !!DGet(`div#tache-${tache.id}`)
   })
-}
-Test.add('on_peut_afficher_la_tache')
+})
 
 // Test.new('la_tache_contient_tous_les_elements', function test(){
 //   const tache = TacheFactory.create()

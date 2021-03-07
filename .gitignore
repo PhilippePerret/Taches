@@ -3,6 +3,8 @@
 
 data/secret/
 
+data/taches/
+
 ajax/secret/
 
 .DS_Store

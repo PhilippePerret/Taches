@@ -14,11 +14,12 @@ class Ajax
       }
       script_fullpath = File.expand_path(File.join('.','ajax','_scripts',param(:script)))
       if File.exists?(script_fullpath)
-          begin
-            require_relative "./_scripts/#{param(:script)}"
-          rescue Exception => e
-            raise e
-          end
+        begin
+          require_relative "./_scripts/#{param(:script)}"
+        rescue Exception => e
+          log("ERREUR FATALE: #{e.inspect}")
+          raise e
+        end
       else
         self << {error: "Le script '#{script_fullpath}' est introuvable…"}
       end
