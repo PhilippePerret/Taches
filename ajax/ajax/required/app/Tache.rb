@@ -24,7 +24,7 @@ class << self
 
   def save
     log("Data avant sauvegarde : #{data.inspect}")
-    taches = items.values.sort_by{|tache|tache.echeance_time}.collect{|tache|tache.data}
+    taches = items.values.collect{|tache|tache.data}
     new_data = {
       taches: taches,
       labels: labels,

@@ -39,6 +39,7 @@ static onSaveTache(ev){
     Ajax.send('tache-save.rb', {tache_data: data})
     .then(ret => {
       message(ret.message)
+      Tache.addTacheWithData(data)
       const tache = Tache.get(data.id)
       tache.dispatchData(data)
       tache.display()
