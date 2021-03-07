@@ -22,6 +22,7 @@ static newId(){
 
 constructor(data, params) {
   this.data     = data
+  // console.log("new SmartList data : ", data)
   this.params   = params
   this.strings  = Object.keys(this.data)
   this.title    = params.titre || params.title
@@ -33,6 +34,7 @@ constructor(data, params) {
 open(){
   this.built || this.build()
   this.div.classList.remove('hidden')
+  this.filterAndShow('')
   this.inputField.focus()
 }
 close(){
@@ -126,8 +128,9 @@ filterAndShow(str){
 filter(str){
   var founds = []
   var lenstr = str.length
+  str = str.toLowerCase()
   this.strings.forEach(string => {
-    if(string.substring(0,lenstr) == str){
+    if(string.substring(0,lenstr).toLowerCase() == str){
       founds.push({id:this.data[string], content:string})
     }
   })
@@ -144,8 +147,8 @@ build(){
   inners.push(DCreate('div', {class:'smartlist-title', text:this.title}))
   inners.push(DCreate('input', {type:'text', class:'smartlist-input'}))
   inners.push(DCreate('div',{class:'smartlist-founds'}))
-  this.div = DCreate('div', {id:this.divid,class:'smartlist hidden', inner:inners})
-  document.body.appendChild(this.div)
+  this.div = DCreate('div', {id:this.divid,class:'smartlist hidden', inner:inners});
+  (this.params.container || document.body).appendChild(this.div)
   this.observe()
   this.built = true
 }

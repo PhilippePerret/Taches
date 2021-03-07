@@ -7,10 +7,10 @@ static init(){
 
 // Méthode appelée pour éditer la tache +tache+
 static edit(tache){
-  console.log("éditer la tâche : ", tache)
+  // console.log("éditer la tâche : ", tache)
   this.open()
   this.setValues(tache.data)
-  message("Vous pouvez éditer la tâche #"+tache.id+".")
+  // message("Vous pouvez éditer la tâche #"+tache.id+".")
 }
 
 static toggle(){
@@ -23,7 +23,13 @@ static close(){this.obj.classList.remove('opened')}
 static observe(){
   DGet('#form-btn-save-tache').addEventListener('click',this.onSaveTache.bind(this))
   DGet('#form-btn-init-tache').addEventListener('click',this.onInitForm.bind(this))
+  DGet('#form-btn-add-label').addEventListener('click',this.onButtonAddLabel.bind(this))
   DGet('#handler', this.obj).addEventListener('click',this.toggle.bind(this))
+}
+
+static onButtonAddLabel(ev){
+  Label.choose()
+  return stopEvent(ev)
 }
 
 static onSaveTache(ev){
@@ -39,6 +45,28 @@ static onSaveTache(ev){
   return stopEvent(ev)
 }
 
+/**
+* Méthode appelée pour ajouter un label
+***/
+static addLabel(ilabel){
+  if ( undefined == this.labelsIds ) this.labelsIds = []
+  if ( this.labelsIds.includes(ilabel.id) ) {
+    message("Ce label est déjà dans la liste")
+    return
+  }
+
+  const spanlabel = ilabel.output
+  DGet('span.label-btn-sup', spanlabel).addEventListener('click', this.removeLabel.bind(this, ilabel))
+  this.labelsField.append(spanlabel)
+  this.labelsIds.push(ilabel.id)
+}
+static removeLabel(ilabel){
+  const labspan = DGet(`.label[data-id="${ilabel.id}"]`,this.obj)
+  labspan.remove()
+  this.labelsIds.splice(this.labelsIds.indexOf(ilabel.id),1)
+  // console.log("this.labelsIds = ", this.labelsIds)
+}
+
 static onInitForm(ev){
   this.id = null
   delete this.id
@@ -51,7 +79,7 @@ static getValues(){
   let data = {
       id: this.id || Tache.newId()
     , content:  this.contentField.value
-    , labels:   this.labelsField.value
+    , labels:   this.labelsIds
     , echeance: this.echeanceField.value
     , duree:    this.dureeField.value
     , priority: this.priorityField.value

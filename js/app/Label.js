@@ -9,6 +9,52 @@ class Label {
 
 static get(lid){return this.items[lid]}
 
+/**
+* Méthode appelée pour choisir ou créer un label
+***/
+static choose(){
+  if (undefined == this.smartlist){
+    this.smartlist = new SmartList(this.dataSmartList, {
+        title: 'Labels'
+      , onselect: this.onSelectLabel.bind(this)
+      , oncreate: this.createLabel.bind(this)
+      , container: DGet('#tache-labels')
+    })
+  }
+  this.smartlist.open()
+}
+static endChoose(){
+  // On ne fait rien pour le moment
+}
+
+static onSelectLabel(selected){
+  // console.log("Label::onSelectLabel(", selected)
+  TacheForm.addLabel(this.get(selected.id))
+}
+
+/**
+Méthode appelée quand on a entré un nouveau label dans la boite smartlist
+pour créer un nouveau label
+***/
+static createLabel(label){
+  const data = {
+      id:     this.newId()
+    , name:   label
+    , colors: this.newColors()
+  }
+  const newLabel = new Label(data)
+  TacheForm.addLabel(newLabel)
+  newLabel.save()
+}
+
+static get dataSmartList(){
+  var h = {}
+  for(var id in this.items){
+    Object.assign(h, { [this.items[id].name]: this.items[id].id })
+  }
+  return h
+}
+
 static init(){
   this.items  = {}
   this.lastId = 0
@@ -44,6 +90,20 @@ static newId(){
   if (undefined === this.lastId) this.lastId = 0
   return ++ this.lastId
 }
+// Retourne un couple "<couleur foreground>:<couleur fond>"
+static newColors(){
+  if (undefined === this.paletteCouleurs || this.paletteCouleurs.length == 0) this.paletteCouleurs = this.initPaletteCouleurs()
+  return this.paletteCouleurs.pop()
+}
+static initPaletteCouleurs(){
+  return [
+      '#FFFCCC:#CCC'
+    , '#FFF:#555'
+    , '#FFF:#FF5555'
+    , '#FFF:#55FF55'
+    , '#000:#CCFFCC'
+  ]
+}
 /** ---------------------------------------------------------------------
 *
 *   INSTANCE
@@ -60,8 +120,10 @@ get output(){
   return this._output || (this._output = this.build())
 }
 build(){
-  const span = DCreate('span', {class:'label', 'data-id': this.id, style:this.style, text:this.name})
-  return span.outerHTML
+  const btnsup  = DCreate('span', {class:'label-btn-sup', text:'⨯'})
+  const label   = DCreate('span', {class:'label-name', text:this.name})
+  const span = DCreate('span', {class:'label', 'data-id': this.id, style:this.style, inner:[label, btnsup]})
+  return span
 }
 
 get style(){

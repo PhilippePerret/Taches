@@ -1,8 +1,8 @@
 'use strict';
 
 // Mettre false ou true suivant qu'on veut lancer les tests ou non
-// const TEST_ON = false ;
-const TEST_ON = true ;
+const TEST_ON = false ;
+// const TEST_ON = true ;
 
 $(document).ready(function(){
 

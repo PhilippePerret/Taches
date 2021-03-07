@@ -13,6 +13,15 @@ form#tache-form
   &:not(.opened)
     bottom: -262px
     transition: .5s
+  span#tache-labels
+    position: relative
+    display: inline-block
+    min-width: 200px
+    .smartlist
+      left: 0
+      top: -90px
+  button#form-btn-add-label
+    cursor: pointer
   div#handler
     position: absolute
     top: 0
@@ -33,3 +42,7 @@ form#tache-form
         width: calc(580px - 80px)
       &.short
         width: 80px
+
+button#form-btn-add-label
+  all: unset
+  font-size: 1.2em
