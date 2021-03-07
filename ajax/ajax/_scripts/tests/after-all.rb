@@ -18,3 +18,5 @@ require 'fileutils'
   File.delete(original) if File.exists?(original)
   FileUtils.copy(backup, original) if File.exists?(backup)
 end
+
+log("(after-all.rb) Fin des tests --- reprise des fichiers originaux")

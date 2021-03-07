@@ -40,27 +40,28 @@ Test.new('On peut afficher la tache', function(){
   })
 })
 
-// Test.new('la_tache_contient_tous_les_elements', function test(){
-//   const tache = TacheFactory.create()
-//   const divid = `#tache-${tache.id}`
-//   var errors = []
-//   // Le checkbox
-//   DGet(`${divid}-content`)  || errors.push('le contenu')
-//   DGet(`${divid}-cb-done`)  || errors.push("la case à cocher pour marquer finie")
-//   DGet(`${divid}-buttons`)  || errors.push("le bloc de boutons")
-//   DGet(`${divid}-btn-edit`) || errors.push("le bouton pour éditer la tâche")
-//   DGet(`${divid}-btn-supp`) || errors.push("le bouton pour supprimer la tâche")
-//
-//
-//   if ( errors.length ){
-//     this._failure_message = "La tache ne contient pas tous les éléments. Il manque : " + errors.join(', ')
-//     return false
-//   } else {
-//     return true /* OK */
-//   }
-//
-// })
-//
+Test.new('La ligne de tache contient tous les elements requis', function(){
+  return TacheFactory.create()
+  .then(tache => {
+    const divid = `#tache-${tache.id}`
+    var errors = []
+    DGet(`${divid}-content`)  || errors.push('le contenu')
+    DGet(`${divid}-cb-done`)  || errors.push("la case à cocher pour marquer finie")
+    DGet(`${divid}-buttons`)  || errors.push("le bloc de boutons")
+    DGet(`${divid}-btn-edit`) || errors.push("le bouton pour éditer la tâche")
+    DGet(`${divid}-btn-supp`) || errors.push("le bouton pour supprimer la tâche")
+    DGet(`${divid}-labels`)   || errors.push('ses labels')
+
+    if ( errors.length ){
+      this.failure_message = "La tache ne contient pas tous les éléments. Il manque : " + errors.join(', ') + '.'
+      return false
+    } else {
+      return true /* OK */
+    }
+  })
+})
+
+
 // Test.new('on_peut_detruire_la_tache_avec_le_bouton', function(){
 //   const tache = TacheFactory.create()
 //   const tache2 = TacheFactory.create()

@@ -13,7 +13,7 @@ class Tache {
 static load(){
   this.lastId = 0
   return Ajax.send('taches-load.rb')
-  .then(this.dispatchTaches.bind(this))
+  .then(this.dispatchData.bind(this))
   .then(this.displayTaches.bind(this))
   .then(this.observeUI.bind(this))
 }
@@ -23,9 +23,15 @@ static newId(){
   return ++ this.lastId
 }
 
+// ON dispatche toutes les données
+static dispatchData(ret){
+  // console.log("-> Tache.dispatchData", ret)
+  Label.dispatchData.call(Label, ret.labels)
+  this.dispatchTaches(ret.taches)
+}
 // Crée les instances
-static dispatchTaches(ret){
-  ret.taches.forEach(dtache => this.addTacheWithData(dtache))
+static dispatchTaches(dtaches){
+  dtaches.forEach(dtache => this.addTacheWithData(dtache))
 }
 
 // Affiche toutes les tâches
@@ -101,6 +107,7 @@ build(){
   ]}))
   inners.push(DCreate('input', {id:`${this.divId}-cb-done`, class:'cb-done', type:'checkbox'}))
   inners.push(DCreate('span', {id:`${this.divId}-content`, class:'tache-content', text:this.content}))
+  inners.push(DCreate('span', {id:`${this.divId}-labels`, class:'tache-labels', text:this.formated_labels}))
   const div = DCreate('div',{id:this.divId, class:'tache', inner: inners})
   return div;
 }
@@ -108,6 +115,15 @@ build(){
 observe(){
   DGet(`#${this.divId}-btn-edit`).addEventListener('click', this.onEdit.bind(this))
   DGet(`#${this.divId}-btn-supp`).addEventListener('click', this.onDestroy.bind(this))
+}
+
+// *** Private methods ***
+
+/**
+* Retourne les labels formatés
+***/
+get formated_labels(){
+  return this._formatedlabels || ( this._formatedlabels = Label.formate(this.labels))
 }
 
 }// class Tache

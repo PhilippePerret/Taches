@@ -26,8 +26,8 @@ class << self
     log("Data avant sauvegarde : #{data.inspect}")
     taches = items.values.sort_by{|tache|tache.echeance_time}.collect{|tache|tache.data}
     new_data = {
-      # TODO Plus tard, on pourra mettre d'autres données
       taches: taches,
+      labels: labels,
       create_at:  data[:created_at] || Time.now.strftime('%Y/%m/%d-%H:%M'),
       updated_at: Time.now.strftime('%Y/%m/%d-%H:%M')
     }
@@ -50,6 +50,13 @@ class << self
       h
     end
   end #/ items
+
+  def labels
+    @labels ||= data[:labels] || {}
+  end
+  def labels=(value)
+    @labels = value
+  end
 
   def data
     @data ||= begin
@@ -89,11 +96,13 @@ end # /<< self
 #
 # ---------------------------------------------------------------------
 attr_accessor :data
+attr_reader :error # pour les erreurs à renvoyer
 def initialize(data)
   @data = data
 end
 def id        ; data[:id]       end
 def content   ; data[:content]  end
+def duree     ; data[:duree]    end
 def echeance  ; data[:echeance].nil_if_empty end
 
 def echeance_time
@@ -108,6 +117,12 @@ end #/ echeance_time
 
 # Pour détruire la tâche
 def destroy
+  self.class.items.delete(id)
+  self.class.save
+  return true
+rescue Exception => e
+  @error = e.message
+  Ajax.error(e)
   return false # pour le moment
 end
 end #/Tache

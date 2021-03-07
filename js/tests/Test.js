@@ -11,12 +11,20 @@ class Test {
     this.pending_count = 0
   }
   static start(){
-    Ajax.send('tests/before-all.rb')
-    .then(this.init.bind(this))
-    .then(loadJSModule.bind(window,'tests_tache.js','tests'))
-    .then(loadJSModule.bind(null,'tests_labels.js','tests'))
-    .then(this.runNext.bind(this))
-    .catch(erreur.bind(null))
+    try {
+      Ajax.send('tests/before-all.rb')
+      .then(this.init.bind(this))
+      .then(loadJSModule.bind(window,'tests_tache.js','tests'))
+      .then(loadJSModule.bind(null,'tests_labels.js','tests'))
+      .then(this.runNext.bind(this))
+      .catch(err => {
+        console.error(err)
+        Ajax.send('tests/after-all.rb')
+      })
+    } catch (e) {
+      console.error(e)
+      Ajax.send('tests/after-all.rb')
+    }
   }
   static runNext(){
     const nextTest = this.items.shift()
@@ -42,7 +50,7 @@ static add(test, human_name){
   this.items.push(test)
 }
 static new(method_human_name, method){
-  const method_name = method_human_name.replace(/ /g,'_')
+  const method_name = method_human_name.replace(/ /g,'_').replace(/[^a-zA-Z0-9]]/g,'_')
   this[method_name] = method;
   this.add(method_name, method_human_name)
 }
@@ -96,11 +104,14 @@ writeFailure(){
 }
 
 get success_message(){
-  return this.params.success || this.params.success_message || this.message_from_method_name
+  return this._success_message || this.params.success || this.params.success_message || this.message_from_method_name
 }
+set success_message(msg){this._success_message = msg}
+
 get failure_message(){
   return this._failure_message || this.params.failure || this.params.failure_message || `FAIL: ${this.message_from_method_name}`
 }
+set failure_message(msg){this._failure_message = msg}
 
 get message_from_method_name(){
   return this._msgfrommethname || (this._msgfrommethname = this.buildMessageFromMethod())
