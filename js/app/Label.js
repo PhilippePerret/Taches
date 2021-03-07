@@ -74,23 +74,12 @@ static addLabelWithData(dlabel){
   Object.assign(this.items, {[dlabel.id]: new Label(dlabel)})
 }
 
-
-/**
-* Méthode qui met en forme les labels transmis
-***/
-static formate(labels_ids){
-  if (!labels_ids || labels_ids == '') return ''
-  var str = []
-  labels_ids.forEach(label_id => str.push(this.get(label_id).output))
-  return str.join('')
-}
-
 // Retourne un nouvel identifiant
 static newId(){
   if (undefined === this.lastId) this.lastId = 0
   return ++ this.lastId
 }
-// Retourne un couple "<couleur foreground>:<couleur fond>"
+// Retourne un couple "<couleur police>:<couleur fond>"
 static newColors(){
   if (undefined === this.paletteCouleurs || this.paletteCouleurs.length == 0) this.paletteCouleurs = this.initPaletteCouleurs()
   return this.paletteCouleurs.pop()
@@ -99,6 +88,7 @@ static initPaletteCouleurs(){
   return [
       '#FFFCCC:#CCC'
     , '#FFF:#555'
+    , 'black:#CCF'
     , '#FFF:#FF5555'
     , '#FFF:#55FF55'
     , '#000:#CCFFCC'
@@ -117,7 +107,7 @@ constructor(data) {
 }
 
 get output(){
-  return this._output || (this._output = this.build())
+  return this.build()
 }
 build(){
   const btnsup  = DCreate('span', {class:'label-btn-sup', text:'⨯'})

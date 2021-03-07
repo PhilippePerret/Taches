@@ -35,10 +35,13 @@ static onButtonAddLabel(ev){
 static onSaveTache(ev){
   const data = this.getValues()
   if (data){
-    console.log("Enregistrement de la tâche :", data)
+    // console.log("Enregistrement de la tâche :", data)
     Ajax.send('tache-save.rb', {tache_data: data})
     .then(ret => {
       message(ret.message)
+      const tache = Tache.get(data.id)
+      tache.dispatchData(data)
+      tache.display()
       this.close()
     })
   }
@@ -57,7 +60,7 @@ static addLabel(ilabel){
 
   const spanlabel = ilabel.output
   DGet('span.label-btn-sup', spanlabel).addEventListener('click', this.removeLabel.bind(this, ilabel))
-  this.labelsField.append(spanlabel)
+  this.spanLabels.append(spanlabel)
   this.labelsIds.push(ilabel.id)
 }
 static removeLabel(ilabel){
@@ -95,7 +98,8 @@ static getValues(){
 static setValues(data){
   this.id = data.id
   this.contentField.value   = data.content || ''
-  this.labelsField.value    = data.labels || ''
+  this.spanLabels.innerHTML = ''
+  ;(data.labels||[]).forEach(label_id => this.addLabel(Label.get(label_id)))
   this.echeanceField.value  = data.echeance || ''
   this.dureeField.value     = data.duree || ''
   this.priorityField.value  = data.priority || '3'
@@ -143,8 +147,8 @@ static checkValues(data){
 static get contentField(){
   return this._contentfield || (this._contentfield = DGet('#tache-content', this.obj))
 }
-static get labelsField(){
-  return this._labelsfld || (this._labelsfld = DGet('#tache-labels',this.obj))
+static get spanLabels(){
+  return this._spanlabels || (this._spanlabels = DGet('#tache-labels', this.obj))
 }
 static get echeanceField(){
   return this._echeancefld || (this._echeancefld = DGet('#tache-echeance',this.obj))
