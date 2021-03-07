@@ -14,8 +14,11 @@ class Test {
     try {
       Ajax.send('tests/before-all.rb')
       .then(this.init.bind(this))
-      .then(loadJSModule.bind(window,'tests_tache.js','tests'))
-      .then(loadJSModule.bind(null,'tests_labels.js','tests'))
+      // *** SYSTEM ***
+      .then(loadJSModule.bind(window,'tests_SmartList.js', 'tests/system'))
+      // *** APPLICATION ***
+      // .then(loadJSModule.bind(window,'tests_tache.js','tests'))
+      // .then(loadJSModule.bind(null,'tests_labels.js','tests'))
       .then(this.runNext.bind(this))
       .catch(err => {
         console.error(err)
