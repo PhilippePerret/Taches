@@ -76,15 +76,16 @@ static setOrGetMarkJourFor(tache){
     this.containerFutures.querySelectorAll('.jour').forEach(divjour => {
       if ( placed ) return
       const dayjour = divjour.getAttribute('data-day')
-      if (dayjour == tache.day) {
+      console.log("Comparer '%s' et '%s'", tache.date.day, dayjour)
+      if (dayjour == tache.date.day) {
         // <= C'est la marque du jour pour la tâche
         // => On la prend comme marque du jour
         markJour = divjour
         placed = true
-      } else if ( dayjour > tache.day ) {
+      } else if ( dayjour > tache.date.day ) {
         // <= La marque du jour courant est supérieure à la date de la tâche
         // => Il faut mettre la tâche avant
-        markJour = DCreate('div', {'data-day':tache.day, class:'jour', text:tache.date.formate()})
+        markJour = DCreate('div', {'data-day':tache.date.day, class:'jour', text:tache.date.formate()})
         this.containerFutures.insertBefore(markJour, divjour)
         placed = true
       }
@@ -92,7 +93,7 @@ static setOrGetMarkJourFor(tache){
     if ( !placed ) {
       // <= La marque du jour n'a pas pu être prise ou insérée
       // => On la marque là
-      markJour = DCreate('div', {'data-day':tache.day, class:'jour', text:tache.date.formate()})
+      markJour = DCreate('div', {'data-day':tache.date.day, class:'jour', text:tache.date.formate()})
       this.containerFutures.appendChild(markJour)
     }
   }
