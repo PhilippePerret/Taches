@@ -106,7 +106,8 @@ get isFuture(){return this._isfuture || (this._isfuture = this.day > TODAY.day)}
 
 getDate(){
   let d = this.dateInit
-  if ( this.dateInit.constructor.name != 'Date' ) d = Date.parse(d)
+  if ( this.dateInit.constructor.name != 'Date' ) d = Date.parse(d.replace(/-/g,'/'))
+  // console.log("Date pour “%s” = ", this.dateInit, d)
   return new Date(d)
 }
 

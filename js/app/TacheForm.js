@@ -97,13 +97,12 @@ static setSaveButton(btnName){
   DGet('#form-btn-save-tache',this.obj).innerHTML = btnName
 }
 
-
 static getValues(){
   let data = {
       id: this.id || Tache.newId()
     , content:  this.contentField.value
     , labels:   this.labelsIds
-    , echeance: this.echeanceField.value
+    , echeance: this.getEcheanceInForm()
     , duree:    this.dureeField.value
     , priority: this.priorityField.value
   }
@@ -115,12 +114,24 @@ static getValues(){
     return data
   }
 }
+
+static getEcheanceInForm(){
+  var val = this.echeanceField.value
+  if ( val == '' ) return null
+  else return SmartDate.parse(val).day
+}
+
 static setValues(data){
   this.id = data.id
   this.contentField.value   = data.content || ''
   this.spanLabels.innerHTML = ''
   ;(data.labels||[]).forEach(label_id => this.addLabel(Label.get(label_id)))
-  this.echeanceField.value  = data.echeance || ''
+
+  var valueEche ;
+  if ( data.echeance && data.echeance != '') {
+    valueEche = new SmartDate(data.echeance).formate('%d %m %Y')
+  }
+  this.echeanceField.value  = valueEche || ''
   this.dureeField.value     = data.duree || ''
   this.priorityField.value  = data.priority || '3'
 }
@@ -140,13 +151,7 @@ static checkValues(data){
   data.content.length > 0 || errors.push("- il faut définir la tâche")
 
   // L'échéance
-  // Elle peut être définie :
-  //  - par un jour seul => mettre mois et année
-  //  - par un jour et une année => mettre année
-  //  - par une date complète => vérifier qu'elle ne soit pas dans le passé
-  //  - par un terme comme "demain", "après-demain", "dans 3 jours",
-  //    "dans 1 semaine", etc.
-  data.echeance = data.echeance.trim()
+  // Rien à faire dessus
 
   // = La durée =
   // Elle peut être définie
