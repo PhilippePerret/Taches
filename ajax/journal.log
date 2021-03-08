@@ -3950,3 +3950,37 @@
 --- 2021/03/08-08:20 -> Tache::get(2::Integer)
 --- 2021/03/08-08:20 Data avant sauvegarde : {:taches=>[{:id=>2, :content=>"Une t\u00E2che pour voir", :labels=>[], :echeance=>"2021/06/23", :duree=>"24", :priority=>3}, {:content=>"Une t\u00E2che \u00E0 Sun Mar 07 2021 qui est prioritaire", :id=>3, :echeance=>nil, :duree=>24, :priority=>"4"}, {:id=>4, :content=>"Faire cela mais \u00E7a n'est pas prioritaire", :labels=>[4, 2, 3], :echeance=>"", :duree=>"", :priority=>"1"}, {:id=>5, :content=>"Poursuivre le dossier legalstart", :labels=>[5], :echeance=>"", :duree=>"", :priority=>"5"}, {:id=>6, :content=>"R\u00E9pondre \u00E0 Jonathan", :labels=>[4, 6], :echeance=>"2021/3/6", :duree=>"", :priority=>"5"}, {:id=>7, :content=>"Une t\u00E2che pour le 10 mai", :echeance=>"2021/05/20", :duree=>"", :priority=>"2"}], :labels=>{1=>{:name=>"Premier label", :colors=>"white:red", :id=>1}, 2=>{:name=>"Deuxi\u00E8me label", :id=>2, :colors=>"black:#CCF"}, 3=>{:name=>"Troisi\u00E8me label", :id=>3, :colors=>"black:#CCF"}, 4=>{:id=>4, :name=>"atelier icare", :colors=>"#000:#CCFFCC"}, 5=>{:id=>5, :name=>"icare \u00E9ditions", :colors=>"#333:#55FF55"}, 6=>{:id=>6, :name=>"mail", :colors=>"#000:#CCFFCC"}}, :create_at=>"2021/03/08-08:19", :updated_at=>"2021/03/08-08:19"}
 --- 2021/03/08-08:20 Data après classement : {:taches=>[{:id=>2, :content=>"Une t\u00E2che \u00E0 voir le 23 juin", :echeance=>"2021/06/23", :duree=>"24", :priority=>"3"}, {:content=>"Une t\u00E2che \u00E0 Sun Mar 07 2021 qui est prioritaire", :id=>3, :echeance=>nil, :duree=>24, :priority=>"4"}, {:id=>4, :content=>"Faire cela mais \u00E7a n'est pas prioritaire", :labels=>[4, 2, 3], :echeance=>"", :duree=>"", :priority=>"1"}, {:id=>5, :content=>"Poursuivre le dossier legalstart", :labels=>[5], :echeance=>"", :duree=>"", :priority=>"5"}, {:id=>6, :content=>"R\u00E9pondre \u00E0 Jonathan", :labels=>[4, 6], :echeance=>"2021/3/6", :duree=>"", :priority=>"5"}, {:id=>7, :content=>"Une t\u00E2che pour le 10 mai", :echeance=>"2021/05/20", :duree=>"", :priority=>"2"}], :labels=>{1=>{:name=>"Premier label", :colors=>"white:red", :id=>1}, 2=>{:name=>"Deuxi\u00E8me label", :id=>2, :colors=>"black:#CCF"}, 3=>{:name=>"Troisi\u00E8me label", :id=>3, :colors=>"black:#CCF"}, 4=>{:id=>4, :name=>"atelier icare", :colors=>"#000:#CCFFCC"}, 5=>{:id=>5, :name=>"icare \u00E9ditions", :colors=>"#333:#55FF55"}, 6=>{:id=>6, :name=>"mail", :colors=>"#000:#CCFFCC"}}, :create_at=>"2021/03/08-08:20", :updated_at=>"2021/03/08-08:20"}
+--- 2021/03/08-08:28 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+--- 2021/03/08-08:28 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+--- 2021/03/08-08:28 Nombre de fichiers .DS_Store détruits : 0
+--- 2021/03/08-08:28 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+--- 2021/03/08-08:28 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+--- 2021/03/08-08:28 Nombre de fichiers .DS_Store détruits : 0
+--- 2021/03/08-08:28 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+--- 2021/03/08-08:28 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+--- 2021/03/08-08:28 Nombre de fichiers .DS_Store détruits : 0
+--- 2021/03/08-08:28 ERREUR FATALE: #<Errno::ENOENT: No such file or directory @ rb_sysopen - /Users/philippeperret/Sites/Taches/data/taches/archives.txt>
+--- 2021/03/08-08:28 ERREUR: No such file or directory @ rb_sysopen - /Users/philippeperret/Sites/Taches/data/taches/archives.txt
+--- 2021/03/08-08:28 BACKTRACE ERREUR: /Users/philippeperret/.rbenv/versions/2.6.3/lib/ruby/2.6.0/fileutils.rb:1385:in `initialize'
+/Users/philippeperret/.rbenv/versions/2.6.3/lib/ruby/2.6.0/fileutils.rb:1385:in `open'
+/Users/philippeperret/.rbenv/versions/2.6.3/lib/ruby/2.6.0/fileutils.rb:1385:in `copy_file'
+/Users/philippeperret/.rbenv/versions/2.6.3/lib/ruby/2.6.0/fileutils.rb:492:in `copy_file'
+/Users/philippeperret/.rbenv/versions/2.6.3/lib/ruby/2.6.0/fileutils.rb:419:in `block in cp'
+/Users/philippeperret/.rbenv/versions/2.6.3/lib/ruby/2.6.0/fileutils.rb:1557:in `block in fu_each_src_dest'
+/Users/philippeperret/.rbenv/versions/2.6.3/lib/ruby/2.6.0/fileutils.rb:1573:in `fu_each_src_dest0'
+/Users/philippeperret/.rbenv/versions/2.6.3/lib/ruby/2.6.0/fileutils.rb:1555:in `fu_each_src_dest'
+/Users/philippeperret/.rbenv/versions/2.6.3/lib/ruby/2.6.0/fileutils.rb:418:in `cp'
+/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb:103:in `backup_if_required'
+/Users/philippeperret/Sites/Taches/ajax/ajax/_scripts/taches-load.rb:7:in `<top (required)>'
+/Users/philippeperret/Sites/Taches/ajax/ajax/ajax_class.rb:18:in `require_relative'
+/Users/philippeperret/Sites/Taches/ajax/ajax/ajax_class.rb:18:in `treate_request'
+/Users/philippeperret/Sites/Taches/ajax/ajax.rb:12:in `<main>'
+--- 2021/03/08-08:29 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+--- 2021/03/08-08:29 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+--- 2021/03/08-08:29 Nombre de fichiers .DS_Store détruits : 0
+--- 2021/03/08-08:29 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+--- 2021/03/08-08:29 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+--- 2021/03/08-08:29 Nombre de fichiers .DS_Store détruits : 0
+--- 2021/03/08-08:29 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String_RTF.rb'
+--- 2021/03/08-08:29 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/db.rb'
+--- 2021/03/08-08:29 Nombre de fichiers .DS_Store détruits : 0

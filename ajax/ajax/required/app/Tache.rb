@@ -89,6 +89,22 @@ class << self
     @config_backup_path ||= File.join(DATA_FOLDER,'config_backup.yaml')
   end
 
+  def backup_folder
+    @backup_folder ||= mkdir(File.join(DATA_FOLDER,'xbackup'))
+  end #/ backup_folder
+
+  # Méthode qui produit un backup des données si nécessaire
+  def backup_if_required
+    backup_path = File.join(backup_folder, "backup-#{Time.now.strftime('%Y-%m-%d')}-data.yaml")
+    if File.exists?(data_path) && not(File.exists?(backup_path))
+      FileUtils.copy(data_path, backup_path)
+    end
+    backup_archives_path = File.join(backup_folder,"backups-#{Time.now.strftime('%Y-%m-%d')}-archive.yaml")
+    if File.exists?(archives_path) && not(File.exists?(backup_archives_path))
+      FileUtils.copy(archives_path, backup_archives_path)
+    end
+  end #/ backup_if_required
+
 end # /<< self
 # ---------------------------------------------------------------------
 #
