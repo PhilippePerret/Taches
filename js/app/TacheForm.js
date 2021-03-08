@@ -2,6 +2,7 @@
 class TacheForm {
 
 static reset(){
+  this.id = null
   this.labelsIds = []
 }
 
@@ -90,7 +91,7 @@ static removeLabel(ilabel){
 }
 
 static onInitForm(ev){
-  this.id = null
+  this.reset()
   delete this.id
   this.setValues({})
   ev && stopEvent(ev)
@@ -129,7 +130,9 @@ static getEcheanceInForm(){
 static setValues(data){
   this.id = data.id
   this.contentField.value   = data.content || ''
-  this.spanLabels.innerHTML = ''
+  // Attention : dans le span des labels se trouve peut-être la
+  // smartlist
+  this.spanLabels.querySelectorAll('span.label').forEach(span => span.remove())
   ;(data.labels||[]).forEach(label_id => this.addLabel(Label.get(label_id)))
 
   var valueEche ;

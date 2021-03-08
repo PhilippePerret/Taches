@@ -13,6 +13,7 @@ static get(lid){return this.items[lid]}
 * Méthode appelée pour choisir ou créer un label
 ***/
 static choose(){
+  console.log("-> Label::choose")
   if (undefined == this.smartlist){
     this.smartlist = new SmartList(this.dataSmartList, {
         title: 'Labels'
@@ -24,7 +25,7 @@ static choose(){
   this.smartlist.open()
 }
 static endChoose(){
-  // On ne fait rien pour le moment
+  // On n'a rien à faire pour le moment
 }
 
 static onSelectLabel(selected){

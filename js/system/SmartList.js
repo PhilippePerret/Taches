@@ -32,13 +32,15 @@ constructor(data, params) {
 }
 
 open(){
+  console.log("-> SmartList#open")
   this.built || this.build()
   this.div.classList.remove('hidden')
   this.filterAndShow('')
   this.inputField.focus()
+  console.log("<- SmartList#open")
 }
 close(){
-  // console.log("this.div in close = ", this.div)
+  console.log("this.div in close = ", this.div)
   this.div.classList.add('hidden')
 }
 
@@ -64,7 +66,6 @@ onClickFound(found, ev){
   SI c'est la touche entrée => on choisit ou on crée si vide
   SINON, on filtre la liste avec la valeur fournie
 ***/
-
 onKeyUp(ev){
   // console.log("ev.key", ev.key)
   switch(ev.key){
@@ -140,15 +141,15 @@ filter(str){
 
 
 build(){
-
+  console.log("-> SmartList#build")
   this.divid = `smartlist-${this.id}`
 
   const inners = []
   inners.push(DCreate('div', {class:'smartlist-title', text:this.title}))
   inners.push(DCreate('input', {type:'text', class:'smartlist-input'}))
   inners.push(DCreate('div',{class:'smartlist-founds'}))
-  this.div = DCreate('div', {id:this.divid,class:'smartlist hidden', inner:inners});
-  (this.params.container || document.body).appendChild(this.div)
+  this.div = DCreate('div', {id:this.divid,class:'smartlist hidden', inner:inners})
+  ;(this.params.container || document.body).appendChild(this.div)
   this.observe()
   this.built = true
 }

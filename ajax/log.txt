@@ -433,3 +433,63 @@ Chargement des modules
 --- [2021-03-08 15:33:54 +0100] Entrée dans ajax.rb
 APP_FOLDER = "/Users/philippeperret/Sites/Taches"
 Chargement des modules
+--- [2021-03-08 15:38:50 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:38:50 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:38:50 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:38:51 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:40:38 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:40:39 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:40:39 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:40:39 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:43:42 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:43:42 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:43:42 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:43:43 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:46:58 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:46:59 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:46:59 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:46:59 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:48:27 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:48:27 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:48:28 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+--- [2021-03-08 15:48:28 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
