@@ -49,7 +49,7 @@ static displayTaches(){
 // Observer l'interface
 static observeUI(){
   TacheForm.init()
-  message("Je suis prêt.")
+  // message("Je suis prêt.")
 }
 
 // Ajoute une tâche par ses données en l'ajoutant à la liste des items
@@ -118,6 +118,9 @@ static get containerTodayReal(){
 static get containerTodayNotPrior(){
   return this._todaysnonprior || (this._todaysnonprior = DGet('#taches-non-prioritaires',this.containerToday))
 }
+static get containerDone(){
+  return this.donecont || (this.donecont = DGet('#taches-done',this.container))
+}
 
 static get container(){return this._container || (this._container = DGet('#taches'))}
 /** ---------------------------------------------------------------------
@@ -177,12 +180,10 @@ display(){
   // Noter un point important : ça n'est plus la même instance, lorsqu'on
   // modifie une donnée
   const oldDiv = DGet(`#tache-${this.id}`,mere.container)
-  if ( oldDiv ) {
-    console.log("Je supprime la tâche affichée")
-    oldDiv.remove()
-  }
+  oldDiv && oldDiv.remove()
 
-  if ( this.isPrioritaire ) { this.insertIn(mere.containerTodayPrior) }
+  if ( this.isDone ) { this.insertIn(mere.containerDone) }
+  else if ( this.isPrioritaire ) { this.insertIn(mere.containerTodayPrior) }
   else if ( this.isNonPrioritaire) { this.insertIn(mere.containerTodayNotPrior) }
   else if ( this.isTodays ) { this.insertIn(mere.containerTodayReal) }
   else if ( this.isOutOfDate ) {
@@ -269,6 +270,18 @@ onDestroy(){
   }
 }
 
+onMarkDone(ev){
+  this.isDone = this.cbDone.checked
+  if ( this.isDone ) {
+    Ajax.send('tache-archive.rb', {tache_id: this.id})
+    .then(ret => message("Tâche marquée faite et archivée."))
+  } else {
+    message("Tâche remise dans le courant (mais reste dans les archives pour le moment).")
+  }
+  this.display()
+  return true
+}
+
 get div(){
   return this._div || (this._div = this.build())}
 get divId(){return this._divid || (this._divid = `tache-${this.id}`)}
@@ -279,8 +292,9 @@ build(){
       DCreate('button', {id:`${this.divId}-btn-edit`, text:'🛠'})
     , DCreate('button', {id:`${this.divId}-btn-supp`, text:'🗑'})
   ]}))
+  this.cbDone = DCreate('input', {id:`${this.divId}-cb-done`, class:'cb-done', type:'checkbox'})
   inners.push(DCreate('span', {id:`${this.divId}-labels`, class:'tache-labels', inner:this.formated_labels}))
-  inners.push(DCreate('input', {id:`${this.divId}-cb-done`, class:'cb-done', type:'checkbox'}))
+  inners.push(this.cbDone)
   inners.push(DCreate('span', {id:`${this.divId}-content`, class:'tache-content', text:this.content}))
   const div = DCreate('div',{id:this.divId, 'data-id':this.id, class:'tache', inner: inners})
   this.built = true
@@ -290,6 +304,7 @@ build(){
 observe(){
   DGet(`#${this.divId}-btn-edit`).addEventListener('click', this.onEdit.bind(this))
   DGet(`#${this.divId}-btn-supp`).addEventListener('click', this.onDestroy.bind(this))
+  this.cbDone.addEventListener('click', this.onMarkDone.bind(this))
 }
 unobserve(){
   DGet(`#${this.divId}-btn-edit`).removeEventListener('click', this.onEdit.bind(this))

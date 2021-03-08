@@ -11,7 +11,7 @@ require_relative 'ajax_class'
 
 log("Chargement des modules")
 Dir["#{APP_FOLDER}/ajax/ajax/required/**/*.rb"].each do |m|
-  log("Chargement module '#{m}'")
+  # log("Chargement module '#{m}'")
   require m
 end
 

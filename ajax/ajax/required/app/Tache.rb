@@ -131,6 +131,16 @@ def echeance_time
   end
 end #/ echeance_time
 
+# Pour archiver la tâche
+def archive
+  del = '___'
+  data_archive = [:id, :content, :duree, :echeance, :label].collect{|k|data[k]}.join(del)
+  File.open(self.class.archives_path,'a') do |f|
+    f.puts "#{Time.now.strftime('%Y-%m-%d-%H:%M')}#{del}#{data_archive}"
+  end
+  destroy
+end
+
 # Pour détruire la tâche
 def destroy
   self.class.items.delete(id)
@@ -141,4 +151,6 @@ rescue Exception => e
   Ajax.error(e)
   return false # pour le moment
 end
+
+
 end #/Tache
