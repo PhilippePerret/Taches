@@ -1,6 +1,10 @@
 'use strict'
 class TacheForm {
 
+static reset(){
+  this.labelsIds = []
+}
+
 static init(){
   this.observe()
 }
@@ -8,6 +12,7 @@ static init(){
 // Méthode appelée pour éditer la tache +tache+
 static edit(tache){
   // console.log("éditer la tâche : ", tache)
+  this.reset()
   this.open()
   this.setValues(tache.data)
   this.setSaveButton('Modifier')

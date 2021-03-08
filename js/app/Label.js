@@ -44,6 +44,7 @@ static createLabel(label){
   }
   const newLabel = new Label(data)
   TacheForm.addLabel(newLabel)
+  Object.assign(this.items, {[data.id]: newLabel})
   newLabel.save()
 }
 
