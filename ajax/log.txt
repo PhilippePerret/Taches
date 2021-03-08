@@ -16118,3 +16118,42 @@ Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/
 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
 Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-08 11:24:01 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-08 11:24:02 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'
+--- [2021-03-08 11:24:02 +0100] Entrée dans ajax.rb
+APP_FOLDER = "/Users/philippeperret/Sites/Taches"
+Chargement des modules
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/Tache.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/app/app_constants.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/String.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Array.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Nil.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/handies.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Handies_files.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Integer.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Hash.rb'
+Chargement module '/Users/philippeperret/Sites/Taches/ajax/ajax/required/system/Log.rb'

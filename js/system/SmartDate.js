@@ -99,8 +99,8 @@ offset(secondes){
 }
 
 get isToday(){return this._istoday || (this._istoday = this.day == TODAY.day)}
-get isPast(){return this._ispast || (this._ispast = this.day < TODAY.day)}
-get isFuture(){return this._isfuture || (this._isfuture = this.day > TODAY.day)}
+get isPast(){return this._ispast || (this._ispast = this.date < TODAY.date)}
+get isFuture(){return this._isfuture || (this._isfuture = this.date > TODAY.date)}
 
 // *** Private methods ***
 
