@@ -1,0 +1,12 @@
+div.row
+  margin-top: 7px
+  & > label
+    display: inline-block
+    width: 66px
+    font-family: "Arial Narrow"
+    color: #555
+  & > input[type="text"]
+    &:not(.short)
+      width: calc(100% - 80px)
+    &.short
+      width: 80px

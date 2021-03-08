@@ -58,6 +58,7 @@ static get dataSmartList(){
 static init(){
   this.items  = {}
   this.lastId = 0
+  LabelForm.init()
 }
 /**
 * Méthode appelée au chargement pour dispatcher les données des labels
@@ -113,7 +114,12 @@ build(){
   const btnsup  = DCreate('span', {class:'label-btn-sup', text:'⨯'})
   const label   = DCreate('span', {class:'label-name', text:this.name})
   const span = DCreate('span', {class:'label', 'data-id': this.id, style:this.style, inner:[label, btnsup]})
+  label.addEventListener('click', this.edit.bind(this))
   return span
+}
+
+edit(){
+  LabelForm.edit.call(LabelForm,this)
 }
 
 get style(){

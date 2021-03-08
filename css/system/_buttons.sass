@@ -11,8 +11,12 @@ button, a, input[type="button"], input[type="submit"]
     background-color: green
     color: white
     font-family: Futura,Geneva,Helvetica,Arial
-    font-size: 1.2em
-    padding: 0.2em 1.4em
     font-variant: all-small-caps
     border: none
     border-radius: 5px
+  &.main:not(.small)
+    font-size: 1.2em
+    padding: 0.2em 1.4em
+  &.main.small
+    font-size: 0.9em
+    padding: 0em 0.9em 0.1em
