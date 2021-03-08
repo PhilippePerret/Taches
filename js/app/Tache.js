@@ -171,16 +171,17 @@ Synopsis
     SI la tâche à une priorité faible => on la met en dessous
 ***/
 display(){
+  const mere = this.constructor
   // Dans un premier temps, si la tâche a déjà été construite, on doit
   // détruire son affichage
-  if ( this.built ) {
-    this.unobserve
-    this.div.remove()
-    this._div = null
-    delete this._div
+  // Noter un point important : ça n'est plus la même instance, lorsqu'on
+  // modifie une donnée
+  const oldDiv = DGet(`#tache-${this.id}`,mere.container)
+  if ( oldDiv ) {
+    console.log("Je supprime la tâche affichée")
+    oldDiv.remove()
   }
 
-  const mere = this.constructor
   if ( this.isPrioritaire ) { this.insertIn(mere.containerTodayPrior) }
   else if ( this.isNonPrioritaire) { this.insertIn(mere.containerTodayNotPrior) }
   else if ( this.isTodays ) { this.insertIn(mere.containerTodayReal) }
@@ -193,6 +194,8 @@ display(){
     const markJour = mere.setOrGetMarkJourFor(this)
     this.insertIn(mere.containerFutures, markJour.nextSibling)
   }
+
+  this.displayed = true
 
   // On l'observe toujours
   this.observe()
