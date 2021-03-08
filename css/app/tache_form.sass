@@ -11,7 +11,7 @@ form#tache-form
     bottom: 0
     transition: .5s
   &:not(.opened)
-    bottom: -262px
+    bottom: -258px
     transition: .5s
   span#tache-labels
     position: relative
@@ -24,12 +24,16 @@ form#tache-form
     cursor: pointer
   div#handler
     position: absolute
+    text-align: right
     top: 0
     left: 0
     border-radius: 0.5em 0.5em 0 0
     background-color: #CCC
     height: 20px
     width: 100%
+    span#btn-new-tache
+      margin-right: 1em
+      cursor: pointer
   div.row
     margin-top: 7px
     & > label

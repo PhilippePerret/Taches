@@ -10,6 +10,7 @@ static edit(tache){
   // console.log("éditer la tâche : ", tache)
   this.open()
   this.setValues(tache.data)
+  this.setSaveButton('Modifier')
   // message("Vous pouvez éditer la tâche #"+tache.id+".")
 }
 
@@ -25,6 +26,18 @@ static observe(){
   DGet('#form-btn-init-tache').addEventListener('click',this.onInitForm.bind(this))
   DGet('#form-btn-add-label').addEventListener('click',this.onButtonAddLabel.bind(this))
   DGet('#handler', this.obj).addEventListener('click',this.toggle.bind(this))
+  DGet('#btn-new-tache',this.obj).addEventListener('click',this.onWantCreateNewTache.bind(this))
+}
+
+/**
+
+[1] Pour ne pas interférer avec le click sur le #handler
+***/
+static onWantCreateNewTache(ev){
+  this.open()
+  this.onInitForm(null)
+  message("Vous pouvez créer la nouvelle tâche")
+  return stopEvent(ev) // requis, ici [1]
 }
 
 static onButtonAddLabel(ev){
@@ -75,7 +88,13 @@ static onInitForm(ev){
   this.id = null
   delete this.id
   this.setValues({})
-  return stopEvent(ev)
+  ev && stopEvent(ev)
+  this.setSaveButton('Créer')
+  return false
+}
+
+static setSaveButton(btnName){
+  DGet('#form-btn-save-tache',this.obj).innerHTML = btnName
 }
 
 

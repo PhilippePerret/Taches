@@ -76,7 +76,6 @@ static setOrGetMarkJourFor(tache){
     this.containerFutures.querySelectorAll('.jour').forEach(divjour => {
       if ( placed ) return
       const dayjour = divjour.getAttribute('data-day')
-      console.log("Comparer '%s' et '%s'", tache.date.day, dayjour)
       if (dayjour == tache.date.day) {
         // <= C'est la marque du jour pour la tâche
         // => On la prend comme marque du jour
