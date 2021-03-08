@@ -11,4 +11,7 @@ data/taches/
 
 ajax/secret/
 
+ajax/journal.log
+ajax/log.txt
+
 .DS_Store
