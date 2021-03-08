@@ -212,6 +212,16 @@ insertIn(container, before){
   }
 }
 
+removeLabel(label_id){
+  // console.log("Labels au début :", [...this.labels])
+  if ( label_id.constructor.name == 'Label') label_id = label_id.id
+  if ( ! this.labels ) return
+  var offset = this.labels.indexOf(label_id)
+  this.labels.splice(offset, 1)
+  // console.log("Labels après l'opération :", [...this.labels])
+  return this.labels // pour l'opération de sauvegarde
+}
+
 get isPrioritaire(){
   return this._isprior || (this._isprior = (!this.echeance) && this.priority >= 3)
 }

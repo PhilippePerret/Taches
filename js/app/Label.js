@@ -101,7 +101,11 @@ static initPaletteCouleurs(){
 *
 *** --------------------------------------------------------------------- */
 constructor(data) {
-  this.data = data
+  this.dispatchData(data)
+}
+
+dispatchData(data){
+  this.data   = data
   this.id     = data.id
   this.name   = data.name
   this.colors = data.colors
@@ -118,14 +122,26 @@ build(){
   return span
 }
 
+// Pour actualiser tous les labels créés
+// (ce qui consiste à 1) actualiser le nom et 2) actualiser la couleur
+updateAll(){
+  document.querySelectorAll(`.label[data-id="${this.id}"]`).forEach(span => {
+    span.style = this.style
+    DGet('.label-name',span).innerHTML = this.name
+  })
+}
+
 edit(){
   LabelForm.edit.call(LabelForm,this)
 }
 
 get style(){
-  var [fg, bg] = this.colors.split(':')
-  return `color:${fg||'black'};background-color:${bg||'#CCCCCC'};`
+  return `color:${this.foregroundColor};background-color:${this.backgroundColor};`
 }
+
+get foregroundColor(){return this.colors.split(':')[0] || 'black'}
+get backgroundColor(){return this.colors.split(':')[1] || '#CCCCCC'}
+
 /**
 * Sauvegarde du label (@asyn)
 * @async
