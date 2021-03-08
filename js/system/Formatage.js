@@ -39,7 +39,7 @@ const MOIS = {
 }
 function formate_date(date, format){
   format = format || '%J %d %M %Y'
-
+  // console.log("date, date.getDay() = ", date, date.getDay())
   format = format.replace(/%j/g, JOURS[date.getDay()].short)
   format = format.replace(/%J/g, JOURS[date.getDay()].long)
   format = format.replace(/%d/g, date.getDate())
