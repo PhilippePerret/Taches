@@ -1,11 +1,32 @@
 div#taches
   max-width: 1000px
   div.jour
-    font-size: 17pt
-    font-weight: bold
+    font-size: 15pt
     font-variant: all-small-caps
-    margin-top: 1.7em
-    margin-bottom: 0.7em
+    margin-top: 0.5em
+    margin-bottom: 0.2em
+
+  div.section-taches
+    border: 1px solid #DDD
+    margin-top: 2em
+    min-height: 2em
+    position: relative
+    &#taches-of-the-day:before
+      content: 'Aujourd’hui'
+      font-weight: bold
+    &#taches-futures:before
+      content: 'tâches futures'
+    &#taches-out-of-date:before
+      content: 'tâches dépassées'
+      color: red
+      font-weight: bold
+    &:before
+      position: absolute
+      top: -1.1em
+      display: block
+      font-size: 17pt
+      font-variant: all-small-caps
+
 
 div.tache
   border: 1px solid #CCCCCC
@@ -24,3 +45,9 @@ div.tache
     button
       font-size: 7pt
       vertical-align: super
+
+div#taches-futures
+  margin-top: 3em!important
+  div.tache
+    span.tache-content
+      font-size: 12pt

@@ -62,14 +62,61 @@ static addTacheWithData(dtache){
   Object.assign(this.items, {[dtache.id]: new Tache(dtache)})
 }
 
-static get containerPrior(){
-  return this._contprior || (this._contprior = DGet('#taches-prioritaires-sans-echeance'))
+/**
+* Ajoute une marque pour le jour de la tâche +tache+ si nécessaire.
+Dans tous les cas, retourne la marque du jour (pour permettre de mettre la
+tâche après)
+***/
+static setOrGetMarkJourFor(tache){
+  var markJour = DGet(`div.jour[data-day="${tache.date.day}"]`, this.containerFutures)
+  if ( ! markJour ) {
+    // <= La marque du jour de la tâche future n'est pas encore affichée
+    // => On doit l'ajouter
+    var placed = false
+    this.containerFutures.querySelectorAll('.jour').forEach(divjour => {
+      if ( placed ) return
+      const dayjour = divjour.getAttribute('data-day')
+      if (dayjour == tache.day) {
+        // <= C'est la marque du jour pour la tâche
+        // => On la prend comme marque du jour
+        markJour = divjour
+        placed = true
+      } else if ( dayjour > tache.day ) {
+        // <= La marque du jour courant est supérieure à la date de la tâche
+        // => Il faut mettre la tâche avant
+        markJour = DCreate('div', {'data-day':tache.day, class:'jour', text:tache.date.formate()})
+        this.containerFutures.insertBefore(markJour, divjour)
+        placed = true
+      }
+    })
+    if ( !placed ) {
+      // <= La marque du jour n'a pas pu être prise ou insérée
+      // => On la marque là
+      markJour = DCreate('div', {'data-day':tache.day, class:'jour', text:tache.date.formate()})
+      this.containerFutures.appendChild(markJour)
+    }
+  }
+  return markJour
 }
-static get containerEche(){
-  return this._conteche || (this._conteche = DGet('#taches-avec-echeance'))
+
+
+static get containerOutOfDate(){
+  return this._outofdates || (this._outofdates = DGet('#taches-out-of-date'))
 }
-static get containerNonPrior(){
-  return this._contnonprior || (this._contnonprior = DGet('#taches-non-prioritaires-sans-echeance'))
+static get containerFutures(){
+  return this._futures || (this._futures = DGet('#taches-futures'))
+}
+static get containerToday(){
+  return this._todays || (this._todays = DGet('#taches-of-the-day'))
+}
+static get containerTodayPrior(){
+  return this._todaysprior || (this._todaysprior = DGet('#taches-prioritaires', this.containerToday))
+}
+static get containerTodayReal(){
+  return this._todaysreal || (this._todaysreal = DGet('#taches-today',this.containerToday))
+}
+static get containerTodayNotPrior(){
+  return this._todaysnonprior || (this._todaysnonprior = DGet('#taches-non-prioritaires',this.containerToday))
 }
 
 static get container(){return this._container || (this._container = DGet('#taches'))}
@@ -100,8 +147,20 @@ save(){
 }
 /**
 * Affichage de la tâche
+* ---------------------
+Dans l'affichage on trouve :
+
+  Les tâches qui auraient dû être terminées (if any)
+  La date d'aujourd'hui
+    Avec les tâches sans échéances urgente (priorité >= 3)
+    Avec les tâches d'aujourd'hui
+  Les tâches non urgentes sans échéance
+  Les tâches avec échéance, par date
+
 Synopsis
 --------
+  Si c'est une
+
   SI la tâche définit une échéance, on parcourt la liste des tâches
   ET
     SI le jour de l'échéance existe, on ajoute la tâche à cet endroit
@@ -120,44 +179,34 @@ display(){
     this._div = null
     delete this._div
   }
-  const container = (()=>{
-    if ( this.isPrioritaire) return this.constructor.containerPrior
-    else if (this.isNonPrioritaire) return this.constructor.containerNonPrior
-    else return this.constructor.containerEche
-  })()
 
-  // console.log({
-  //   id: this.id,
-  //   priority: this.priority,
-  //   prioritaire: this.isPrioritaire,
-  //   non_prioritaire: this.isNonPrioritaire,
-  //   echeance: this.echeance,
-  //   container: container
-  //   })
-
-  // Si on affiche par échéance
-  // => On doit chercher le jour de la tâche
-  //    S'il n'existe pas, on le crée avant le premier jour après
-  var placed = false
-  if ( this.echeance ) {
-    container.querySelectorAll('.jour').forEach(divjour => {
-      const jour = divjour.getAttribute('data-jour')
-      if ( jour > this.echeance ){
-        container.insertBefore(this.divJour(), divjour)
-      }
-    })
-  } else {
-    container.insertBefore(this.div, divtache)
+  const mere = this.constructor
+  if ( this.isPrioritaire ) { this.insertIn(mere.containerTodayPrior) }
+  else if ( this.isNonPrioritaire) { this.insertIn(mere.containerTodayNotPrior) }
+  else if ( this.isTodays ) { this.insertIn(mere.containerTodayReal) }
+  else if ( this.isOutOfDate ) {
+    this.insertIn(mere.containerOutOfDate)
+    mere.containerOutOfDate.classList.remove('hidden')
   }
-
-  container.querySelectorAll('.tache').forEach( divtache => {
-    if ( placed ) return // pour accélérer
-    const curtache = this.constructor.get(Number(divtache.getAttribute('data-id')))
-    placed = true
-  })
+  else { // Tâche future
+    // Si le jour n'est pas encore affiché, on l'ajoute
+    const markJour = mere.setOrGetMarkJourFor(this)
+    this.insertIn(mere.containerFutures, markJour.nextSibling)
+  }
 
   // On l'observe toujours
   this.observe()
+}
+
+/**
+* Pour insérer la tâche
+***/
+insertIn(container, before){
+  if (undefined == before) {
+    container.appendChild(this.div)
+  } else {
+    container.insertBefore(this.div, before)
+  }
 }
 
 get isPrioritaire(){
@@ -165,6 +214,15 @@ get isPrioritaire(){
 }
 get isNonPrioritaire(){
   return this._nonpriori || (this._nonpriori = (!this.echeance) && this.priority < 3)
+}
+get isOutOfDate(){
+  return this._isoutofdate || (this._isoutofdate = this.echeance && this.date.isPast)
+}
+get isTodays(){
+  return this._istodays || ( this._istodays = this.echeance && this.date.isToday)
+}
+get date(){
+  return this._date || ( this._date = new SmartDate(this.echeance) )
 }
 
 // Si la tâche possède une échéance, cette méthode retourne le div pour

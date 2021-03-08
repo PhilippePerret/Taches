@@ -15,7 +15,7 @@ $(document).ready(function(){
     // Quand on joue les tests
     UI.insert("listing_taches", "div#div-inserted")
     .then(UI.insert.bind(UI,'formulaire_taches', 'div#div-inserted'))
-    .then(Tache.load.bind(Tache))
+    // .then(Tache.load.bind(Tache))
     .then(loadJSModule.bind(null, 'Test.js', 'tests'))
     .then(() => {Test.start.call(Test)})
     .catch(err => {console.error(err);erreur(err)})

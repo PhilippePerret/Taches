@@ -4,16 +4,21 @@ et utiliser la méthode `UI.insert('brique'[, container]).then(...)` pour la
 charger dans l'interface
 -->
 <div id="taches">
-  <!-- ICI SERONT PLACÉES TOUTES LES TÂCHES -->
-  <div class="jour">urgentes sans échéances</div>
-  <div id="taches-prioritaires-sans-echeance">
+
+  <div id="taches-out-of-date" class='hidden section-taches'>
 
   </div>
-  <div id="taches-avec-echeance">
+
+  <div id="taches-of-the-day" class="section-taches">
+
+    <div id="taches-prioritaires"></div>
+    <div id="taches-today"></div>
+    <div id="taches-non-prioritaires"></div>
 
   </div>
-  <div class="jour">autres tâches</div>
-  <div id="taches-non-prioritaires-sans-echeance">
+
+  <div id="taches-futures" class="section-taches">
 
   </div>
+
 </div>
