@@ -10,6 +10,7 @@ $(document).ready(function(){
     UI.insert("listing_taches", "div#div-inserted")
     .then(UI.insert.bind(UI,'formulaire_taches', 'div#div-inserted'))
     .then(UI.insert.bind(UI,'formulaire_labels', 'div#div-inserted'))
+    .then(UI.prepare.bind(UI))
     .then(Tache.load.bind(Tache))
     .catch(err => {console.error(err);erreur(err)})
   } else {

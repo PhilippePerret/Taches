@@ -4,6 +4,7 @@ class TacheForm {
 static reset(){
   this.id = null
   this.labelsIds = []
+  this.filesPaths = []
 }
 
 static init(){
@@ -24,13 +25,20 @@ static toggle(){
   if ( this.obj.classList.contains('opened')){this.close()
   } else { this.open() }
 }
-static open(){this.obj.classList.add('opened')}
-static close(){this.obj.classList.remove('opened')}
+static open(){
+  this.obj.classList.add('opened')
+  this.obj.style.bottom = '0px'
+}
+static close(){
+  this.obj.classList.remove('opened')
+  this.obj.style.bottom = `-${this.obj.offsetHeight-20}px`
+}
 
 static observe(){
   DGet('#form-btn-save-tache').addEventListener('click',this.onSaveTache.bind(this))
   DGet('#form-btn-init-tache').addEventListener('click',this.onInitForm.bind(this))
   DGet('#form-btn-add-label').addEventListener('click',this.onButtonAddLabel.bind(this))
+  DGet('#form-btn-add-file').addEventListener('click',this.onButtonAddFile.bind(this))
   DGet('#handler', this.obj).addEventListener('click',this.toggle.bind(this))
   DGet('#btn-new-tache',this.obj).addEventListener('click',this.onWantCreateNewTache.bind(this))
 }
@@ -48,6 +56,14 @@ static onWantCreateNewTache(ev){
 
 static onButtonAddLabel(ev){
   Label.choose()
+  return stopEvent(ev)
+}
+
+// Appelée quand on veut ajouter un fichier
+static onButtonAddFile(ev){
+  var path = prompt("Chemin d’accès complet au nouveau fichier :\n(il est possible de le glisser/déposer depuis le Finder)", "")
+  if ( !path ) return
+  this.addFile(path)
   return stopEvent(ev)
 }
 
@@ -77,7 +93,6 @@ static addLabel(ilabel){
     message("Ce label est déjà dans la liste")
     return
   }
-
   const spanlabel = ilabel.output
   DGet('span.label-btn-sup', spanlabel).addEventListener('click', this.removeLabel.bind(this, ilabel))
   this.spanLabels.append(spanlabel)
@@ -88,6 +103,31 @@ static removeLabel(ilabel){
   labspan.remove()
   this.labelsIds.splice(this.labelsIds.indexOf(ilabel.id),1)
   // console.log("this.labelsIds = ", this.labelsIds)
+}
+
+static addFile(path){
+  if ( undefined == this.filesPaths ) this.filesPaths = []
+  if ( this.filesPaths.includes(path) ) {
+    message("Ce fichier est déjà dans la liste")
+    return
+  }
+  const spanfile = this.buildSpanForFile(path)
+  DGet('span.mini-btn-sup', spanfile).addEventListener('click', this.removeFile.bind(this, path))
+  this.spanFiles.append(spanfile)
+  this.filesPaths.push(path)
+}
+static removeFile(path, ev){
+  const miniSpan = DGet(`span.file[data-id="${path}"]`,this.spanFiles)
+  miniSpan.remove()
+  this.filesPaths.splice(this.filesPaths.indexOf(path),1)
+  ev && stopEvent(ev)
+  return false
+}
+static buildSpanForFile(path){
+  return DCreate('span',{class:'file mini-container', 'data-id':path, inner:[
+      DCreate('span', {class:'mini-name', text:path.split('/').reverse()[0]})
+    , DCreate('span', {class:'mini-btn-sup', text:'⨯'})
+  ]})
 }
 
 static onInitForm(ev){
@@ -109,8 +149,10 @@ static getValues(){
     , content:  this.contentField.value
     , labels:   this.labelsIds
     , echeance: this.getEcheanceInForm()
+    , start:    this.getStartInForm()
     , duree:    this.dureeField.value
     , priority: this.priorityField.value
+    , files:    this.filesPaths
   }
   data = this.checkValues(data)
   if ( data.errors ){
@@ -126,10 +168,21 @@ static getEcheanceInForm(){
   if ( val == '' ) return null
   else return SmartDate.parse(val).day
 }
+static getStartInForm(){
+  var val = this.startField.value
+  if (!val) return null
+  else return SmartDate.parse(val).day
+}
 
 static setValues(data){
   this.id = data.id
   this.contentField.value   = data.content || ''
+  // Les fichiers
+  // ------------
+  this.spanFiles.innerHTML = ''
+  ;(data.files||[]).forEach(path => this.addFile(path))
+  // Les labels
+  // ----------
   // Attention : dans le span des labels se trouve peut-être la
   // smartlist
   this.spanLabels.querySelectorAll('span.label').forEach(span => span.remove())
@@ -183,8 +236,14 @@ static get contentField(){
 static get spanLabels(){
   return this._spanlabels || (this._spanlabels = DGet('#tache-labels', this.obj))
 }
+static get spanFiles(){
+  return this._spanfiles || (this._spanfiles = DGet('#tache-files', this.obj))
+}
 static get echeanceField(){
   return this._echeancefld || (this._echeancefld = DGet('#tache-echeance',this.obj))
+}
+static get startField(){
+  return this._startfld || (this._startfld = DGet('#tache-start',this.obj))
 }
 static get dureeField(){
   return this._dureefld || (this._dureefld = DGet('#tache-duree',this.obj))

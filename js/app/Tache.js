@@ -141,7 +141,9 @@ dispatchData(data){
   this.priority = data.priority
   this.echeance = data.echeance
   this.duree    = data.duree
+  this.start    = data.start
   this.labels   = data.labels
+  this.files    = data.files
 }
 
 // Sauvegarde de la tache
@@ -288,15 +290,22 @@ get divId(){return this._divid || (this._divid = `tache-${this.id}`)}
 
 build(){
   const inners = []
-  inners.push(DCreate('span', {id:`${this.divId}-buttons`, class:'buttons', inner: [
-      DCreate('button', {id:`${this.divId}-btn-edit`, text:'🛠'})
-    , DCreate('button', {id:`${this.divId}-btn-supp`, text:'🗑'})
+  const divid = this.divId
+  // Boutons
+  // -------
+  inners.push(DCreate('span', {id:`${divid}-buttons`, class:'buttons', inner: [
+      DCreate('button', {id:`${divid}-btn-edit`, text:'🛠'})
+    , DCreate('button', {id:`${divid}-btn-supp`, text:'🗑'})
   ]}))
-  this.cbDone = DCreate('input', {id:`${this.divId}-cb-done`, class:'cb-done', type:'checkbox'})
-  inners.push(DCreate('span', {id:`${this.divId}-labels`, class:'tache-labels', inner:this.formated_labels}))
+  // Labels
+  // ------
+  inners.push(DCreate('span', {id:`${divid}-labels`, class:'tache-labels', inner:this.formated_labels}))
+  // CB pour marquer la tâche exécutée
+  this.cbDone = DCreate('input', {id:`${divid}-cb-done`, class:'cb-done', type:'checkbox'})
   inners.push(this.cbDone)
-  inners.push(DCreate('span', {id:`${this.divId}-content`, class:'tache-content', text:this.content}))
-  const div = DCreate('div',{id:this.divId, 'data-id':this.id, class:'tache', inner: inners})
+  inners.push(DCreate('span', {id:`${divid}-content`, class:'tache-content', text:this.content}))
+  inners.push(DCreate('span', {id:`${divid}-files`, class:'tache-files', inner:this.formated_files}))
+  const div = DCreate('div',{id:divid, 'data-id':this.id, class:'tache', inner: inners})
   this.built = true
   return div;
 }
@@ -319,6 +328,18 @@ unobserve(){
 get formated_labels(){
   var spans = []
   ;(this.labels||[]).forEach(lid => spans.push(Label.get(lid).output))
+  return spans
+}
+
+get formated_files(){
+  if (!this.files) return []
+  var spans = []
+  this.files.forEach(path => {
+    const fname = path.split('/').reverse()[0]
+    const fspan = DCreate('span', {class:'ofile mini-container', text:`${fname} ✐`})
+    fspan.addEventListener('click', IO.openInFinder.bind(IO,path,null))
+    spans.push(fspan)
+  })
   return spans
 }
 

@@ -35,9 +35,20 @@ div.tache
   margin-top: 3px
   &:hover
     background-color: #CCDDFF
+    span.tache-labels
+      opacity: 1
   span.tache-labels
     float: right
     margin-right: 1em
+    opacity: 0.4
+    &:hover
+      opacity: 1
+  span.tache-files
+    margin-left: 1em
+    span.ofile
+      background-color: #CCFF
+      margin-right: 6px
+      cursor: pointer
   span.tache-content
     font-family: 'Avenir Next Condensed'
     font-size: 14pt
@@ -46,8 +57,11 @@ div.tache
   span.buttons
     float: right
     button
+      all: unset
       font-size: 7pt
-      vertical-align: super
+      vertical-align: middle
+      margin-right: 6px
+      cursor: pointer
 
 div#taches-futures
   margin-top: 3em!important

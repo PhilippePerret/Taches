@@ -1,8 +1,14 @@
 'use strict';
 
-const TABS = ['home','crop','analyse','export'];
-
 class UI {
+
+/**
+* Préparation de l'interface, appelée juste après avoir chargé les briques
+* principales
+***/
+static prepare(){
+  TacheForm.close()
+}
 
 /**
 * Insertion des éléments HTML (briques)

@@ -17,22 +17,25 @@
   </div>
 
   <div class="row">
-    <label>Échéance</label>
-    <input type="text" id="tache-echeance" class="short" placeholder="JJ[/MM[/AAAA]]">
-  </div>
-
-  <div class="row">
-    <label>Durée</label>
-    <input type="text" id="tache-duree" class="short" placeholder="Nombre jours">
+    <label>Dates</label>
+    <input type="text" id="tache-start"     class="short" placeholder="Début">
+    <input type="text" id="tache-echeance"  class="short" placeholder="Fin">
+    <input type="text" id="tache-duree"     class="short" placeholder="Durée">
   </div>
 
   <div class="row">
     <label>Labels</label>
+    <button type="button" id="form-btn-add-label" class="btn-plus">⨁</button>
     <span id="tache-labels"></span>
-    <button type="button" id="form-btn-add-label">⨁</button>
   </div>
 
-  <div class="buttons">
+  <div class="row">
+    <label>Fichiers</label>
+    <button type="button" id="form-btn-add-file" class="btn-plus">⨁</button>
+    <span id="tache-files"></span>
+  </div>
+
+  <div class="right">
     <button type="button" id="form-btn-init-tache" class="btn">Init</button>
     <button type="button" id="form-btn-save-tache" class="main btn small">OK</button>
   </div>
