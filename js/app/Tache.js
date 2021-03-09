@@ -297,9 +297,11 @@ build(){
       DCreate('button', {id:`${divid}-btn-edit`, text:'🛠'})
     , DCreate('button', {id:`${divid}-btn-supp`, text:'🗑'})
   ]}))
-  // Labels
+  // Labels (flottant à droite)
   // ------
   inners.push(DCreate('span', {id:`${divid}-labels`, class:'tache-labels', inner:this.formated_labels}))
+  // Bande couleur de priorité
+  inners.push(DCreate('span', {id:`${divid}-band-prior`, class:'prior-band', 'data-value':this.priority}))
   // CB pour marquer la tâche exécutée
   this.cbDone = DCreate('input', {id:`${divid}-cb-done`, class:'cb-done', type:'checkbox'})
   inners.push(this.cbDone)

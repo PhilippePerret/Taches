@@ -37,6 +37,22 @@ div.tache
     background-color: #CCDDFF
     span.tache-labels
       opacity: 1
+  span.prior-band
+    width: 8px
+    height: 8px
+    margin: 0 2px
+    display: inline-block
+    &[data-value="1"]
+      background-color: green
+    &[data-value="2"]
+      background-color: blue
+    &[data-value="3"]
+      background-color: orange
+    &[data-value="4"]
+      background-color: red
+      opacity: 0.6
+    &[data-value="5"]
+      background-color: red
   span.tache-labels
     float: right
     margin-right: 1em
