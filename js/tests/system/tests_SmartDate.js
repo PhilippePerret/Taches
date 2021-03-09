@@ -3,6 +3,20 @@
 * Test de la classe SmartDate
 ***/
 
+Test.new('SmartDate#dayCountBefore(date) retourne le nombre de jours entre deux date', function(){
+  var sd = new SmartDate()
+  var actual = sd.dayCountBefore()
+  actual == 0 || raise(`SmartDate#dayCountBefore(date) devrait retourner 0 (jours), il retourne ${actual}`)
+  sd = TODAY.moins(4)
+  actual = sd.dayCountBefore()
+  actual == 4 || raise(`SmartDate#dayCountBefore(date) devrait retourner 4 (jours), il retourne ${actual}`)
+  sd = TODAY.moins(6)
+  var sd2 = TODAY.plus(4)
+  actual = sd.dayCountBefore(sd2)
+  actual == 10 || raise(`SmartDate#dayCountBefore(date) devrait retourner 10 (jours), il retourne ${actual}`)
+  return true
+})
+
 Test.new('On peut instancier une SmartDate pour aujourd’hui', function(){
   var sd = new SmartDate()
   var expected = formate_date(new Date(), '%Y-%m-%d')

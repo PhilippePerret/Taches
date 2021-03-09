@@ -83,6 +83,17 @@ get date(){
   return this._date || (this._date = this.getDate())
 }
 
+/**
+  Retourne le nombre de jour avant la date +date+
+  +date+ est TODAY par défaut
+***/
+dayCountBefore(date){
+  date = date || TODAY
+  if ('string' == typeof(date)) date = SmartDate.parse(date)
+  var nb = date.date.getTime() - this.date.getTime()
+  return parseInt(nb / (1000*3600*24),10)
+}
+
 formate(format){
   return formate_date(this.date, format)
 }

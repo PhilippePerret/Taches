@@ -1,5 +1,5 @@
 div#taches
-  max-width: 1000px
+  max-width: 100%
   div.jour
     font-size: 15pt
     font-variant: all-small-caps
@@ -39,6 +39,25 @@ div.tache
     background-color: #CCDDFF
     span.tache-labels
       opacity: 1
+  span.tache-labels
+    float: right
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    width: 200px
+    margin-right: 1em
+    opacity: 0.4
+    &:hover
+      opacity: 1
+  span.tache-echeance
+    font-size: 9pt
+    margin-left: 12px
+    span.warning
+      color: red
+    span.caution
+      color: orange
+    span.ok
+      color: green
   span.prior-band
     width: 8px
     height: 8px
@@ -55,12 +74,6 @@ div.tache
       opacity: 0.6
     &[data-value="5"]
       background-color: red
-  span.tache-labels
-    float: right
-    margin-right: 1em
-    opacity: 0.4
-    &:hover
-      opacity: 1
   span.tache-files
     margin-left: 1em
     span.ofile

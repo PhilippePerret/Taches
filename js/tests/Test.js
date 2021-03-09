@@ -17,8 +17,8 @@ class Test {
       .then(this.init.bind(this))
       // *** SYSTEM ***
       // .then(loadJSModule.bind(window,'tests_SmartList.js', 'tests/system'))
-      // .then(loadJSModule.bind(window,'tests_SmartDate.js', 'tests/system'))
-      .then(loadJSModule.bind(window,'tests_SmartDate_parse.js', 'tests/system'))
+      .then(loadJSModule.bind(window,'tests_SmartDate.js', 'tests/system'))
+      // .then(loadJSModule.bind(window,'tests_SmartDate_parse.js', 'tests/system'))
       // *** APPLICATION ***
       // .then(loadJSModule.bind(window,'tests_tache.js','tests'))
       // .then(loadJSModule.bind(null,'tests_labels.js','tests'))

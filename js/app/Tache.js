@@ -342,7 +342,12 @@ build(){
   // CB pour marquer la tâche exécutée
   this.cbDone = DCreate('input', {id:`${divid}-cb-done`, class:'cb-done', type:'checkbox'})
   inners.push(this.cbDone)
+  // Le contenu, donc la tâche elle-même
   inners.push(DCreate('span', {id:`${divid}-content`, class:'tache-content', text:this.content}))
+  // Échéance (if any — flottant à droite)
+  if ( this.echeance ) {
+    inners.push(DCreate('span', {id:`${divid}-echeance`, class:'tache-echeance', text:this.formated_echeance}))
+  }
   inners.push(DCreate('span', {id:`${divid}-files`, class:'tache-files', inner:this.formated_files}))
   const div = DCreate('div',{id:divid, 'data-id':this.id, class:'tache', inner: inners})
   this.built = true
@@ -361,6 +366,25 @@ unobserve(){
 
 // *** Private methods ***
 
+/**
+  Retourne l'échéance formatée (if any) sous la forme "dans 3 jours"
+***/
+get formated_echeance(){
+  if ( ! this.echeance ) return ''
+  const nbj = TODAY.dayCountBefore(this.dateEcheance)
+  var [mark, css] = (nbj=>{
+    if ( nbj < 0 ) return ['<span class="red">DÉPASSÉE</span>', 'warning']
+    else if ( nbj == 0) return ['ce soir', 'warning']
+    else {
+      var mrk = `${nbj} jour${nbj > 1 ? 's' : ''}`
+      var style = 'ok' ;
+      if ( nbj < 7 ) style = 'caution'
+      return [mrk, style]
+    }
+  })(nbj)
+  // Sinon, on la met en forme
+  return `<span class="${css}">(avant ${mark})</span>`
+}
 /**
 * Retourne les labels formatés
 ***/
