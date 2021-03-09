@@ -110,13 +110,13 @@ static get containerToday(){
   return this._todays || (this._todays = DGet('#taches-of-the-day'))
 }
 static get containerTodayPrior(){
-  return this._todaysprior || (this._todaysprior = DGet('#taches-prioritaires', this.containerToday))
+  return this._todaysprior || (this._todaysprior = DGet('#taches-prioritaires', this.container))
 }
 static get containerTodayReal(){
-  return this._todaysreal || (this._todaysreal = DGet('#taches-today',this.containerToday))
+  return this._todaysreal || (this._todaysreal = DGet('#taches-today',this.container))
 }
 static get containerTodayNotPrior(){
-  return this._todaysnonprior || (this._todaysnonprior = DGet('#taches-non-prioritaires',this.containerToday))
+  return this._todaysnonprior || (this._todaysnonprior = DGet('#taches-non-prioritaires',this.container))
 }
 static get containerDone(){
   return this.donecont || (this.donecont = DGet('#taches-done',this.container))
