@@ -115,7 +115,7 @@ static get containerTodayPrior(){
 static get containerTodayReal(){
   return this._todaysreal || (this._todaysreal = DGet('#taches-today',this.container))
 }
-static get containerTodayNotPrior(){
+static get containerNotPrior(){
   return this._todaysnonprior || (this._todaysnonprior = DGet('#taches-non-prioritaires',this.container))
 }
 static get containerDone(){
@@ -123,11 +123,19 @@ static get containerDone(){
 }
 
 static get container(){return this._container || (this._container = DGet('#taches'))}
+
+
+
+
 /** ---------------------------------------------------------------------
 *
 *   INSTANCE
 *
 *** --------------------------------------------------------------------- */
+
+
+
+
 constructor(data) {
   this.dispatchData(data)
 }
@@ -139,7 +147,7 @@ dispatchData(data){
   this.id = data.id
   this.content = data.content
   this.priority = data.priority
-  this.echeance = data.echeance
+  this.echeance = this.calculateEcheance(data)
   this.duree    = data.duree
   this.start    = data.start
   this.labels   = data.labels
@@ -150,26 +158,33 @@ dispatchData(data){
 save(){
   return Ajax.send('tache-save.rb', {tache_data: this.data})
 }
-/**
-* Affichage de la tâche
-* ---------------------
-Dans l'affichage on trouve :
 
-  Les tâches qui auraient dû être terminées (if any)
-  La date d'aujourd'hui
-    Avec les tâches sans échéances urgente (priorité >= 3)
-    Avec les tâches d'aujourd'hui
-  Les tâches non urgentes sans échéance
-  Les tâches avec échéance, par date
+/**
+Calcul de l'échéance
+--------------------
+Elle peut être définie de deux façons : par valeur explicite (dans ce cas,
+data.echeance est défini) ou par valeur implicite (si data.start et data.duree
+sont définis).
+La valeur implicite est toujours prioritaire
+***/
+calculateEcheance(data){
+  if (data.start && data.duree) {
+    const sd = new SmartDate(data.start)
+    return sd.plus(data.duree).day
+  } else { return data.echeance }
+}
+
+
+/**
+  AFFICHAGE/PLACEMENT DE LA TÂCHE
+  ===============================
 
 Synopsis
 --------
-  Si c'est une
-
-  SI la tâche définit une échéance, on parcourt la liste des tâches
+  SI la tâche définit une date de début, on parcourt la liste des tâches
   ET
-    SI le jour de l'échéance existe, on ajoute la tâche à cet endroit
-    SI le jour de l'échéance n'existe pas (qu'on arrive à un jour suivant),
+    SI le jour du début existe, on ajoute la tâche à cet endroit
+    SI le jour du début n'existe pas (qu'on arrive à un jour suivant),
       on crée ce jour et on l'ajoute à la liste
   SINON
     SI la tâche a une forte priorité => on la met tout au-dessus
@@ -186,7 +201,7 @@ display(){
 
   if ( this.isDone ) { this.insertIn(mere.containerDone) }
   else if ( this.isPrioritaire ) { this.insertIn(mere.containerTodayPrior) }
-  else if ( this.isNonPrioritaire) { this.insertIn(mere.containerTodayNotPrior) }
+  else if ( this.isNonPrioritaire) { this.insertIn(mere.containerNotPrior) }
   else if ( this.isTodays ) { this.insertIn(mere.containerTodayReal) }
   else if ( this.isOutOfDate ) {
     this.insertIn(mere.containerOutOfDate)
@@ -226,27 +241,49 @@ removeLabel(label_id){
 }
 
 get isPrioritaire(){
-  return this._isprior || (this._isprior = (!this.echeance) && this.priority >= 3)
+  return this._isprior || (this._isprior = (!this.start) && this.priority >= 3)
 }
 get isNonPrioritaire(){
-  return this._nonpriori || (this._nonpriori = (!this.echeance) && this.priority < 3)
+  return this._nonpriori || (this._nonpriori = (!this.start) && this.priority < 3)
 }
 get isOutOfDate(){
   return this._isoutofdate || (this._isoutofdate = this.echeance && this.date.isPast)
 }
+/**
+  Retourne TRUE si c'est une tâche du jour
+  Ça peut être une tâche du jour pour les raisons suivantes :
+    - son démarrage est aujourd'hui
+    - son démarrage est un jour précédent, mais son échéance n'est pas encore
+      arrivée
+***/
 get isTodays(){
-  return this._istodays || ( this._istodays = this.echeance && this.date.isToday)
+  return this._istodays || ( this._istodays = this.calculateIfTodays())
+}
+calculateIfTodays(){
+  if (!this.start) return false
+  if (this.date.day == TODAY.day) return true
+  else {
+    if ( TODAY.isBefore(this.start) ) return false
+    else if ( this.echeance && TODAY.isAfter(this.echeance) ) {
+      return false
+    } else {
+      return true
+    }
+  }
 }
 get date(){
-  return this._date || ( this._date = new SmartDate(this.echeance) )
+  return this._date || ( this._date = new SmartDate(this.start) )
+}
+get dateEcheance(){
+  return this._dateecheance || ( this._dateecheance = new SmartDate(this.echeance) )
 }
 
 // Si la tâche possède une échéance, cette méthode retourne le div pour
 // le jour à marquer
 divJour(){
   var titre ;
-  if (this.echeance) {
-    titre = this.formated_echeance
+  if (this.start) {
+    titre = this.formated_start
   } else if ( Number(this.priority) > 3 ) {
     titre = "Urgent sans échéance"
   } else {
@@ -254,11 +291,11 @@ divJour(){
   }
   return DCreate('div', {class:'jour', text:titre})
 }
-get formated_echeance(){
-  return capitalize(formate_date(this.date_echeance))
+get formated_start(){
+  return capitalize(formate_date(this.date_start))
 }
-get date_echeance(){
-  return this._dateeche || (this._dateeche = new Date(Date.parse(this.echeance)) )
+get date_start(){
+  return this._datestart || (this._datestart = new Date(Date.parse(this.start)) )
 }
 
 onEdit(){

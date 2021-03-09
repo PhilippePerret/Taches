@@ -188,12 +188,16 @@ static setValues(data){
   this.spanLabels.querySelectorAll('span.label').forEach(span => span.remove())
   ;(data.labels||[]).forEach(label_id => this.addLabel(Label.get(label_id)))
 
-  var valueEche ;
-  if ( data.echeance && data.echeance != '') {
+  var valueEche, valueStart ;
+  if ( data.echeance ) {
     valueEche = new SmartDate(data.echeance).formate('%d %m %Y')
+  }
+  if ( data.start ) {
+    valueStart = new SmartDate(data.start).formate('%d %m %Y')
   }
   this.echeanceField.value  = valueEche || ''
   this.dureeField.value     = data.duree || ''
+  this.startField.value     = valueStart  || ''
   this.priorityField.value  = data.priority || '3'
 }
 

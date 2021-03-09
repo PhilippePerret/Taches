@@ -2,6 +2,7 @@
 
 const REG_MARK_AS_OFFSET = /^([+-])([0-9]+)([a-z]*)$/
 const REG_MARK_AS_DATE = /^([0-9]{1,2})(?:[ /]([0-9]{1,2})(?:[ /]([0-9]{2,4}))?)?$/
+const REG_MARK_AS_DAY  = /^([0-9][0-9][0-9][0-9])\-([0-1]?[0-9])\-([0-3]?[0-9])$/
 class SmartDate {
 /** ---------------------------------------------------------------------
 *
@@ -29,6 +30,7 @@ static parse(foo){
         // regOffset = foo.match(REG_MARK_AS_OFFSET)
         var regOffset = REG_MARK_AS_OFFSET.exec(foo)
         var regDate   = REG_MARK_AS_DATE.exec(fooInit)
+        var regDay    = REG_MARK_AS_DAY.exec(fooInit)
         if ( regOffset ) {
           // console.log("regOffset = ", regOffset)
           var [tout, sign, nombre, unite] = regOffset
@@ -45,6 +47,8 @@ static parse(foo){
           if (!annee || annee == '') annee = TODAY.date.getFullYear()
           else if ( annee.length == 2 ) annee = "20"+annee
           return new SmartDate(`${annee}/${mois}/${jour}`)
+        } else if ( regDay ) {
+          return new SmartDate(fooInit.replace(/\-/g,'/'))
         }
     }
   })(foo)
@@ -81,6 +85,21 @@ get date(){
 
 formate(format){
   return formate_date(this.date, format)
+}
+
+// Retourne TRUE si la date courante est après/avant/la même que la date +date+
+// fournie qui peut être une SmartDate, un day "AAAA-MM-JJ" ou une date à parser
+isAfter(date){
+  if ('string' == typeof(date)) date = SmartDate.parse(date)
+  return this.date > date.date
+}
+isBefore(date){
+  if ('string' == typeof(date)) date = SmartDate.parse(date)
+  return this.date < date.date
+}
+isSame(date){
+  if ('string' == typeof(date)) date = SmartDate.parse(date)
+  return this.day == date.day
 }
 
 // Retourne la SmartDate de cette date moins le nombre de jours
