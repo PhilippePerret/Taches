@@ -9,6 +9,11 @@ class Label {
 
 static get(lid){return this.items[lid]}
 
+static getByName(label){
+  for(var lid in this.items){
+    if ( this.items[lid].name == label ) return this.items[lid]
+  }
+}
 /**
 * Méthode appelée pour choisir ou créer un label
 ***/
@@ -38,15 +43,19 @@ Méthode appelée quand on a entré un nouveau label dans la boite smartlist
 pour créer un nouveau label
 ***/
 static createLabel(label){
+  const newLabel = this.create(label)
+  TacheForm.addLabel(newLabel)
+}
+
+static create(label){
   const data = {
       id:     this.newId()
     , name:   label
     , colors: this.newColors()
   }
-  const newLabel = new Label(data)
-  TacheForm.addLabel(newLabel)
   Object.assign(this.items, {[data.id]: newLabel})
   newLabel.save()
+  return new Label(data)
 }
 
 static get dataSmartList(){
@@ -58,6 +67,10 @@ static get dataSmartList(){
 }
 
 static init(){
+  this.reset()
+}
+
+static reset(){
   this.items  = {}
   this.lastId = 0
   LabelForm.init()

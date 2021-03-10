@@ -7,6 +7,11 @@ class Tache {
 *
 *** --------------------------------------------------------------------- */
 
+static reset(){
+  this.lastId = 0
+  this.items  = {}
+  document.querySelectorAll('.tache').forEach(span => span.remove())
+}
 /**
 * Méthode principale permettant de charger et d'afficher les tâches courantes
 ***/

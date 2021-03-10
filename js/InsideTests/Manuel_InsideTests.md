@@ -189,5 +189,28 @@ Pour jouer tous les tests du système (très long), on doit mettre la variable s
 
 Pour faire jouer les tests, il suffit de mettre la constante `INSIDE_TESTS_ON` définie dans le fichier `InsideTests.js` de ce dossier — ou un fichier de configuration — à `true`.
 
+---
+
+## Méthodes pratiques
+
+> Note : toutes ces méthodes sont définies dans le [fichier principal][].
+
+#### Attendre x secondes
+
+On utilise la méthode `wait(<nombre de secondes>)`. Par exemple :
+
+```javascript
+Test.new('C’est un test de l’attente', async function(){ // <===== NOTER
+
+  jouer_une_operation()
+
+  await wait(12) // on attend 12 secondes
+
+  resultat = jouer_operation_apres()
+
+  return resultat
+})
+```
+
 
 [fichier principal]: #fichier_principal

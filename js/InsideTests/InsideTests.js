@@ -9,20 +9,22 @@
 const INSIDE_TESTS_ON = true ;
 // const INSIDE_TESTS_ON = false ;
 
-const RUN_SYSTEM_INSIDETESTS  = false ; // true => joue les tests systèmes
+const RUN_SYSTEM_INSIDETESTS  = false; // true => joue les tests systèmes
 const RUN_APP_INSIDETESTS     = true ; // true => joue les tests de l'application
 
 // *** APPLICATION ***
 const INSIDE_TESTS_APP_FILES = [
-  // ['simple_test.js']
-    'tests_tache.js'
+    null // Juste pour les virgules ensuite
+    // , 'tests_tache.js'
   , ['edition', 'taches']
   // , ['tests_labels.js', '']
 ]
 
 // *** SYSTEM ***
 const INSIDE_TESTS_SYSTEM_FILES = [
-  ['tests_SmartList.js',        '']
+  null
+, 'Nombre_tests'
+, ['tests_SmartList.js',        '']
 , ['tests_SmartDate.js',        '']
 , ['tests_SmartDate_parse.js',  '']
 ]
@@ -62,6 +64,7 @@ class Test {
     return Promise.all(this.promisesList)
   }
   static addTest(mainfolder, paire){
+    if ( !paire ) return
     var [file, folder] = (arg => {
       if ( 'string' == typeof(arg) ) return [arg, null]
       else return arg
@@ -187,3 +190,12 @@ buildMessageFromMethod(){
   return msg
 }
 }//CLASS Test
+
+/**
+  Handy method pour attendre +secondes+ secondes
+***/
+function wait(secondes){
+  return new Promise((ok,ko) => {
+    setTimeout(ok, 1000 * secondes)
+  })
+}

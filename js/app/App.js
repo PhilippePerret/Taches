@@ -7,4 +7,13 @@ static init(){
     .then(UI.insert.bind(UI,'formulaire_labels', 'div#div-inserted'))
     .then(UI.prepare.bind(UI))
 }
+
+/**
+Surtout pour les tests, permet de tout réinitialiser
+***/
+static resetAll(){
+  Tache.reset()
+  TacheForm.init()
+  Label.reset()
+}
 }// class App
