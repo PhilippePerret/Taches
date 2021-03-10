@@ -46,3 +46,5 @@ Test.new('Label.formate retourne un code correct', function(){
     }
   })
 })
+
+console.log("Test tests_labels.js chargé")

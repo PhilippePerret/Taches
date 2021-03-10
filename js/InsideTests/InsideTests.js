@@ -4,6 +4,49 @@
   *
 *** --------------------------------------------------------------------- */
 
+// Mettre à true pour court-circuiter le chargement de l'application
+// et lancer les tests
+const INSIDE_TESTS_ON = true ;
+// const INSIDE_TESTS_ON = false ;
+
+const RUN_SYSTEM_INSIDETESTS  = false ; // true => joue les tests systèmes
+const RUN_APP_INSIDETESTS     = true ; // true => joue les tests de l'application
+
+// *** APPLICATION ***
+const INSIDE_TESTS_APP_FILES = [
+  // ['simple_test.js']
+    'tests_tache.js'
+  , ['edition', 'taches']
+  // , ['tests_labels.js', '']
+]
+
+// *** SYSTEM ***
+const INSIDE_TESTS_SYSTEM_FILES = [
+  ['tests_SmartList.js',        '']
+, ['tests_SmartDate.js',        '']
+, ['tests_SmartDate_parse.js',  '']
+]
+
+
+/** ---------------------------------------------------------------------
+* =========================================================================
+* =========================================================================
+*
+* ==================   NE RIEN TOUCHER CI-DESSOUS   ===================
+*
+* =========================================================================
+* =========================================================================
+*** --------------------------------------------------------------------- */
+document.addEventListener('DOMContentLoaded', function(){
+  if (INSIDE_TESTS_ON){
+    App.init()
+    .then(() => {Test.start.call(Test)})
+    .catch(err => {console.error(err);erreur(err)})
+  }
+})
+
+
+
 class Test {
   static init(ret){
     this.items = []; // pour mettre tous les tests (instances Test)
@@ -11,23 +54,35 @@ class Test {
     this.failure_count = 0
     this.pending_count = 0
   }
+
+  static loadAllTestFiles(){
+    this.promisesList = []
+    RUN_SYSTEM_INSIDETESTS && INSIDE_TESTS_SYSTEM_FILES.forEach(this.addTest.bind(this, 'system'))
+    RUN_APP_INSIDETESTS && INSIDE_TESTS_APP_FILES.forEach(this.addTest.bind(this, 'app'))
+    return Promise.all(this.promisesList)
+  }
+  static addTest(mainfolder, paire){
+    var [file, folder] = (arg => {
+      if ( 'string' == typeof(arg) ) return [arg, null]
+      else return arg
+    })(paire)
+    var folderpath = `InsideTests/${mainfolder}`
+    if ( folder ) folderpath += `/${folder}`
+    // console.log("Ajout du path de test inside js '%s/%s'", folderpath, file)
+    this.promisesList.push(loadJSModule(file, folderpath))
+  }
   static start(){
     try {
       Ajax.send('tests/before-all.rb')
       .then(this.init.bind(this))
-      // *** SYSTEM ***
-      // .then(loadJSModule.bind(window,'tests_SmartList.js', 'tests/system'))
-      .then(loadJSModule.bind(window,'tests_SmartDate.js', 'tests/system'))
-      // .then(loadJSModule.bind(window,'tests_SmartDate_parse.js', 'tests/system'))
-      // *** APPLICATION ***
-      // .then(loadJSModule.bind(window,'tests_tache.js','tests'))
-      // .then(loadJSModule.bind(null,'tests_labels.js','tests'))
+      .then(this.loadAllTestFiles.bind(this))
       .then(this.runNext.bind(this))
       .catch(err => {
         console.error(err)
         Ajax.send('tests/after-all.rb')
       })
     } catch (e) {
+      console.error(this.currentTest.method_name)
       console.error(e)
       Ajax.send('tests/after-all.rb')
     }
@@ -35,8 +90,10 @@ class Test {
   static runNext(){
     const nextTest = this.items.shift()
     if ( nextTest ) {
+      this.currentTest = nextTest
       nextTest.run.call(nextTest).then(this.runNext.bind(this))
     } else {
+      this.currentTest = null
       this.report()
       return Ajax.send('tests/after-all.rb')
     }

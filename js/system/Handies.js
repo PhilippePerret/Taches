@@ -138,6 +138,7 @@ function clip(what, msg){
 function loadJSModule(moduleName, folder = 'module'){
   moduleName.endsWith('.js') || (moduleName += '.js')
   return new Promise((ok,ko)=>{
+    // console.log("Inscription du script '%s'", `js/${folder}/${moduleName}`)
     const script = DCreate('SCRIPT',{src:`js/${folder}/${moduleName}`, type:"text/javascript"})
     document.body.appendChild(script)
     script.addEventListener('load', ok)
