@@ -1,5 +1,13 @@
 'use strict';
+/** ---------------------------------------------------------------------
+*
+*   UI.js             librairie officielle WebAppScaffold
+*   version 1.0.1
 
+# 1.0.1
+  Amélioration de la méthode insert (correction du bug quand pas de container)
+
+*** --------------------------------------------------------------------- */
 class UI {
 
 /**
@@ -8,6 +16,7 @@ class UI {
 ***/
 static prepare(){
   TacheForm.close()
+  ModeAffichage.init()
 }
 
 /**
@@ -84,10 +93,11 @@ static unlisten(button, evType, method){
   Méthode qui insert la brique html de chemin relatif +fname+ (dans ./html)
   dans le container +container+.
 **/
-static insert(fname, container = document.body){
+static insert(fname, container){
   return new Promise((ok,ko)=>{
     Ajax.send('system/get-brique.rb', {rpath: fname})
     .then(ret => {
+      container = container || document.body
       if ( 'string' == typeof container ) { container = document.querySelector(container) }
       container.insertAdjacentHTML('beforeend', ret.brique)
       ok(ret)

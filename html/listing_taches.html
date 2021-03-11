@@ -5,24 +5,37 @@ charger dans l'interface
 -->
 <div id="taches">
 
-  <div id="taches-out-of-date" class='hidden section-taches'>
+  <section id="mode-affichage-listing" class="hidden">
+    <div id="taches-out-of-date" class='hidden section-taches'></div>
+    <div id="taches-of-the-day" class="section-taches">
+      <div id="taches-prioritaires"></div>
+      <div id="taches-today"></div>
+    </div>
+    <div id="taches-futures" class="section-taches"></div>
+    <div id="taches-done" class="section-taches"></div>
+    <div id="taches-non-prioritaires" class="section-taches"></div>
+  </section>
 
-  </div>
+  <section id="mode-affichage-simple-listing" class="hidden">
+    <div class="titre"></div>
+    <div class="taches">
+      <!--
+          Les tâches
+          ==========
+          Normalement, pour tous les listings "simples" donc avec des titres
+          (qui sont par exemple les labels) et les tâches
+        -->
+    </div>
+  </section>
 
-  <div id="taches-of-the-day" class="section-taches">
-
-    <div id="taches-prioritaires"></div>
-    <div id="taches-today"></div>
-
-  </div>
-
-  <div id="taches-futures" class="section-taches">
-
-  </div>
-
-
-  <div id="taches-done" class="section-taches"></div>
-
-  <div id="taches-non-prioritaires" class="section-taches"></div>
-
-</div>
+  <section id="mode-affichage-gantt" class="hidden">
+  </section>
+  <section id="mode-affichage-labels" class="hidden">
+  </section>
+  <section id="mode-affichage-priority" class="hidden">
+  </section>
+  <section id="mode-affichage-duree_desc" class="hidden">
+  </section>
+  <section id="mode-affichage-duree_asc" class="hidden">
+  </section>
+</div><!-- #taches -->

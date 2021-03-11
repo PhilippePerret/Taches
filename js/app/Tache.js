@@ -50,6 +50,11 @@ static displayTaches(){
   }
 }
 
+// Pour actualiser l'affichage des tâches
+static updateDisplay(){
+  Object.values(this.items).forEach(tache => tache.display(/*not observe*/true))
+}
+
 // Observer l'interface
 static observeUI(){
   TacheForm.init()
@@ -195,32 +200,12 @@ Synopsis
     SI la tâche a une forte priorité => on la met tout au-dessus
     SI la tâche à une priorité faible => on la met en dessous
 ***/
-display(){
-  const mere = this.constructor
-  // Dans un premier temps, si la tâche a déjà été construite, on doit
-  // détruire son affichage
-  // Noter un point important : ça n'est plus la même instance, lorsqu'on
-  // modifie une donnée
-  const oldDiv = DGet(`#tache-${this.id}`,mere.container)
-  oldDiv && oldDiv.remove()
-
-  if ( this.isDone ) { this.insertIn(mere.containerDone) }
-  else if ( this.isOutOfDate || this.isUrgente ) {
-    this.insertIn(mere.containerOutOfDate)
-    mere.containerOutOfDate.classList.remove('hidden')
-  } else if ( this.isPrioritaire ) { this.insertIn(mere.containerTodayPrior) }
-  else if ( this.isNonPrioritaire) { this.insertIn(mere.containerNotPrior) }
-  else if ( this.isTodays ) { this.insertIn(mere.containerTodayReal) }
-  else { // Tâche future
-    // Si le jour n'est pas encore affiché, on l'ajoute
-    const markJour = mere.setOrGetMarkJourFor(this)
-    this.insertIn(mere.containerFutures, markJour.nextSibling)
-  }
-
+display(not_observe){
+  ModeAffichage.display(this)
   this.displayed = true
-
-  // On l'observe toujours
-  this.observe()
+  // On l'observe seulement si ça n'est pas un update (comme quand on
+  // change de mode d'affichage)
+  not_observe || this.observe()
 }
 
 /**
