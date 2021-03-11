@@ -29,7 +29,8 @@ static unprepareModeAffichage(mode){
 static resetListing(params = {}){
   this.listing.classList.remove('hidden')
   params.titre && (DGet('div.titre',this.listing).innerHTML = params.titre);
-  DGet('div.taches',this.listing) && (DGet('div.taches',this.listing).innerHTML = '');
+  this.listingTaches = DGet('div.taches',this.listing)
+  this.listingTaches && (this.listingTaches.innerHTML = '');
 }
 
 /** ---------------------------------------------------------------------
@@ -48,6 +49,9 @@ static prepare_ModeAffichage_listing(){
   this.listing = DGet(`#mode-affichage-listing`, Tache.container)
   this.resetListing()
 }
+
+// La méthode par laquelle passent toutes les tâches pour les afficher dans
+// le mode "listing" (mode par défaut)
 static display_ModeAffichage_listing(tache){
   const mere = tache.constructor
   // Dans un premier temps, si la tâche a déjà été construite, on doit
@@ -85,16 +89,31 @@ static prepare_ModeAffichage_labels(){
   this.listing = DGet('section#mode-affichage-simple-listing',Tache.container)
   this.resetListing({titre: 'classement par labels'})
 }
-static display_ModeAffichage_labels(){
+// La méthode par laquelle passent toutes les tâches pour les afficher dans
+// le mode "labels"
+static display_ModeAffichage_labels(tache){
+  const firstLabelId  = tache.labels[0] || 'none'
+  const markLabelId   = `mark-label-${firstLabelId}`
+  let markLabel = DGet(`div.mark-label#${markLabelId}`)
+  if ( not(markLabel) ){
+    // <= Pas de marque pour ce label, encore, dans l'affichage
+    // => Il faut ajouter cette marque, au bout de la liste
+    const label = tache.labels[0] ? Label.get(firstLabelId) : 'Sans label'
+    markLabel = label
+                  ? label.buildAsMark()
+                  : DCreate('div',{id:markLabelId, class:'mark-label',text:"Sans label"})
+    this.listingTaches.appendChild(markLabel)
+  }
+  tache.insertIn(this.listingTaches, markLabel.nextSibling)
 }
 //
-// static display_ModeAffichage_priority(){
+// static display_ModeAffichage_priority(tache){
 // }
 //
-// static display_ModeAffichage_duree_desc(){
+// static display_ModeAffichage_duree_desc(tache){
 // }
 //
-// static display_ModeAffichage_duree_asc(){
+// static display_ModeAffichage_duree_asc(tache){
 // }
 /** ---------------------------------------------------------------------
 *

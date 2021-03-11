@@ -126,15 +126,20 @@ dispatchData(data){
   this.colors = data.colors
 }
 
-get output(){
-  return this.build()
-}
+get output(){ return this.build() }
 build(){
   const btnsup  = DCreate('span', {class:'label-btn-sup mini-btn-sup', text:'⨯'})
   const label   = DCreate('span', {class:'label-name mini-name', text:this.name})
   const span = DCreate('span', {class:'label', 'data-id': this.id, style:this.style, inner:[label, btnsup], title:`Label #${this.id}`})
   label.addEventListener('click', this.edit.bind(this))
   return span
+}
+
+buildAsMark(){
+  const label = DCreate('span', {class:'label-name', text:this.name})
+  const div = DCreate('div', {id:`mark-label-${this.id}`, class:'mark-label label', 'data-id': this.id, inner:label, style:this.style})
+  div.addEventListener('click', this.edit.bind(this))
+  return div
 }
 
 // Pour actualiser tous les labels créés
