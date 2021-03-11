@@ -48,14 +48,14 @@ static createLabel(label){
 }
 
 static create(label){
-  const data = {
+  const newLabel = new Label({
       id:     this.newId()
     , name:   label
     , colors: this.newColors()
-  }
-  Object.assign(this.items, {[data.id]: newLabel})
+  })
+  Object.assign(this.items, {[newLabel.id]: newLabel})
   newLabel.save()
-  return new Label(data)
+  return newLabel
 }
 
 static get dataSmartList(){
