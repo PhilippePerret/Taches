@@ -132,7 +132,7 @@ get output(){
 build(){
   const btnsup  = DCreate('span', {class:'label-btn-sup mini-btn-sup', text:'⨯'})
   const label   = DCreate('span', {class:'label-name mini-name', text:this.name})
-  const span = DCreate('span', {class:'label', 'data-id': this.id, style:this.style, inner:[label, btnsup]})
+  const span = DCreate('span', {class:'label', 'data-id': this.id, style:this.style, inner:[label, btnsup], title:`Label #${this.id}`})
   label.addEventListener('click', this.edit.bind(this))
   return span
 }

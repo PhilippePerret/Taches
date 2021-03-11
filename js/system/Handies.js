@@ -3,8 +3,11 @@
 
   MÉTHODES PRATIQUES
   ------------------
-  Version 1.2.0
+  Version 1.3.0
 
+# 1.3.0
+  Ajout de la méthode not() (pour faire comme ruby)
+  
 # 1.2.0
   Ajout de la méthode focusIn. Qui permet de focusser dans un élément
   en triggant un évènement focus.
@@ -22,6 +25,7 @@
   Ajout de la méthode 'px'
 *** --------------------------------------------------------------------- */
 
+function not(value){return !value}
 // Pour focus dans un élément en triggant un évènement focus
 // Mais bon… ça ne semble pas marcher…
 function focusIn(element) {

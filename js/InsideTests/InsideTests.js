@@ -6,8 +6,8 @@
 
 // Mettre à true pour court-circuiter le chargement de l'application
 // et lancer les tests
-const INSIDE_TESTS_ON = true ;
-// const INSIDE_TESTS_ON = false ;
+// const INSIDE_TESTS_ON = true ;
+const INSIDE_TESTS_ON = false ;
 
 const RUN_SYSTEM_INSIDETESTS  = false; // true => joue les tests systèmes
 const RUN_APP_INSIDETESTS     = true ; // true => joue les tests de l'application

@@ -17,8 +17,7 @@ static reset(){
 ***/
 static load(){
   this.lastId = 0
-  return Ajax.send('taches-load.rb')
-  .then(this.dispatchData.bind(this))
+  return Ajax.send('taches-load.rb') .then(this.dispatchData.bind(this))
   .then(this.displayTaches.bind(this))
   .then(this.observeUI.bind(this))
 }
@@ -181,6 +180,7 @@ calculateEcheance(data){
 
 
 /**
+
   AFFICHAGE/PLACEMENT DE LA TÂCHE
   ===============================
 
@@ -205,13 +205,12 @@ display(){
   oldDiv && oldDiv.remove()
 
   if ( this.isDone ) { this.insertIn(mere.containerDone) }
-  else if ( this.isPrioritaire ) { this.insertIn(mere.containerTodayPrior) }
-  else if ( this.isNonPrioritaire) { this.insertIn(mere.containerNotPrior) }
-  else if ( this.isTodays ) { this.insertIn(mere.containerTodayReal) }
-  else if ( this.isOutOfDate ) {
+  else if ( this.isOutOfDate || this.isUrgente ) {
     this.insertIn(mere.containerOutOfDate)
     mere.containerOutOfDate.classList.remove('hidden')
-  }
+  } else if ( this.isPrioritaire ) { this.insertIn(mere.containerTodayPrior) }
+  else if ( this.isNonPrioritaire) { this.insertIn(mere.containerNotPrior) }
+  else if ( this.isTodays ) { this.insertIn(mere.containerTodayReal) }
   else { // Tâche future
     // Si le jour n'est pas encore affiché, on l'ajoute
     const markJour = mere.setOrGetMarkJourFor(this)
@@ -245,14 +244,17 @@ removeLabel(label_id){
   return this.labels // pour l'opération de sauvegarde
 }
 
+get isUrgente(){
+  return this._isurgente || (this._isurgente = this.priority == 5)
+}
 get isPrioritaire(){
-  return this._isprior || (this._isprior = (!this.start) && this.priority >= 3)
+  return this._isprior || (this._isprior = not(this.start) && this.priority >= 3)
 }
 get isNonPrioritaire(){
   return this._nonpriori || (this._nonpriori = (!this.start) && this.priority < 3)
 }
 get isOutOfDate(){
-  return this._isoutofdate || (this._isoutofdate = this.echeance && this.date.isPast)
+  return this._isoutofdate || (this._isoutofdate = this.echeance && this.dateEcheance.isPast)
 }
 /**
   Retourne TRUE si c'est une tâche du jour
@@ -307,7 +309,7 @@ onEdit(){
   TacheForm.edit(this)
 }
 onDestroy(){
-  let confirmation = TEST_ON ? !!Test.confirmation : confirm('Êtes-vous certain de vouloir détruire la tâche “'+this.content+'”')
+  let confirmation = INSIDE_TESTS_ON ? !!Test.confirmation : confirm('Êtes-vous certain de vouloir détruire la tâche “'+this.content+'”')
   if(confirmation){
     Ajax.send('tache-destroy.rb', {tache_id:this.id})
     .then(this.div.remove.bind(this.div))
@@ -354,7 +356,8 @@ build(){
     inners.push(DCreate('span', {id:`${divid}-echeance`, class:'tache-echeance', text:this.formated_echeance}))
   }
   inners.push(DCreate('span', {id:`${divid}-files`, class:'tache-files', inner:this.formated_files}))
-  const div = DCreate('div',{id:divid, 'data-id':this.id, class:'tache', inner: inners})
+  // Le grand DIV conteneur
+  const div = DCreate('div',{id:divid, 'data-id':this.id, class:'tache', inner: inners, title:`Tâche #${this.id}`})
   this.built = true
   return div;
 }

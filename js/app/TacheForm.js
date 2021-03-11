@@ -148,8 +148,8 @@ static getValues(){
       id: this.id || Tache.newId()
     , content:  this.contentField.value
     , labels:   this.labelsIds
-    , echeance: this.getEcheanceInForm()
     , start:    this.getStartInForm()
+    , echeance: this.getEcheanceInForm()
     , duree:    this.dureeField.value
     , priority: this.priorityField.value
     , files:    this.filesPaths
